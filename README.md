@@ -3,14 +3,16 @@
 Proper Readme will follow
 
 ## Stack
-- Typescript
-- NextJS
-- Styled Components
-- Lightweight
-- Google Analytics
-- ESLint
-- Jest
-- React Icons
+
+-   Typescript
+-   NextJS
+-   Styled Components
+-   Lightweight
+-   Google Analytics
+-   ESLint
+-   Jest
+-   React Icons
+
 ## Setup
 
 Click use this template or clone with

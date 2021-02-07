@@ -30,7 +30,7 @@ export default class MyDocument extends Document {
 	}
 	render() {
 		return (
-			<Html lang='en-us'>
+			<Html lang="en-us">
 				<Head>
 					<title>NextJS Boilerplate | Nik Schaefer</title>
 					<meta
