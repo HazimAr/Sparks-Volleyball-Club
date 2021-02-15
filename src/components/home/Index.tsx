@@ -1,4 +1,6 @@
-export { default as Intro } from "./Intro";
-export { default as Faq } from "./Faq";
-export { default as Contact } from "./Contact";
-export { default as Section } from "./section";
+export { default as Intro } from "./intro";
+export { default as About } from "./about";
+export { default as Register } from "./register";
+export { default as Faq } from "./faq";
+export { default as Contact } from "./contact";
+

@@ -1,11 +1,44 @@
 import React from "react";
-import { checkAll } from "../index";
 function scroll(offset: any, id: any) {
 	const yOffset = offset;
 	const element: any = document.getElementById(id);
 	const y =
 		element.getBoundingClientRect().top + window.pageYOffset + yOffset;
 	window.scrollTo({ top: y, behavior: "smooth" });
+}
+const elementsToCheck: string[][] = [ // [elementID, animation] set id to visibility:hidden and position:relative in CSS
+  ['about-img-1', 'imgBlowUp 1.5s'],
+  ['row-0', 'slideFromLeft 1.5s'],
+  ['about-img-2', 'imgBlowUp 1.5s'],
+  ['row-1', 'slideFromRight 1.5s'],
+  ['register-img', 'slideFromRight 1.5s'],
+  ['register-text', 'slideFromLeft 1.5s'],
+  ['faq-left', 'slideFromLeft 1.5s'],
+  ['faq-middle', 'onScrollFade 1.5s'],
+  ['faq-right', 'slideFromRight 1.5s'],
+  ['contact', 'onScrollFade 1.5s'],
+]
+const checkFadeElements = function (array: any) {
+  const checkElement = function (array: any, iteration: any) {
+    const offset = window.innerHeight + -200; // px away from bottom of screen to trigger animation
+    if (window.scrollY + offset > array[iteration][2]) {
+      const ele: any = document.getElementById(array[iteration][0])
+      ele.style.visibility = 'visible'
+      ele.style.animation = array[iteration][1]
+      return array.splice(iteration, 1)
+    }
+  }
+  if (array.length !== 0) {
+    checkElement(array, 0)
+  }
+}
+
+
+export function checkAll() {
+  let len = elementsToCheck.length
+  for (let i = 0; i < len; i++) {
+    checkFadeElements(elementsToCheck)
+  }
 }
 
 const offset = -200;

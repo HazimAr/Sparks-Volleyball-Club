@@ -7,7 +7,7 @@ const IS_BROWSER = typeof window !== "undefined";
 const COMPANY_INFO = {
 	name: "Sparks Volleyball Club",
 	email: "SparksVolleyballClub@gmail.com",
-	phone: "702-666-6666",
+	phone: "(702) 502-9462",
 	address1: "3778 W. Cheyenne Ave STE 120, ",
 	address2: "N. Las Vegas, NV 8903",
 };
@@ -15,9 +15,9 @@ const EMAIL_LIST =
 	"hazimarafa69@gmail.com, sparksvolleyballclub@gmail.com, nevadavolleyballcenter@gmail.com";
 
 const COMPANY_SOCIALS = {
-	instagram: "https://www.instagram.com/webdefyer/",
-	facebook: "https://www.facebook.com/WebDefyer-107501398041284",
-	linkedin: "https://www.linkedin.com/company/webdefyer",
+	instagram: "https://www.instagram.com/sparks_vbc_lv/",
+	facebook: "https://www.facebook.com/SparksVBCLV",
+	youtube: "https://www.youtube.com/channel/UCrUowRgcYRZif4HXd9RgO4A",
 };
 
 export {
