@@ -624,7 +624,7 @@ footer {
 }
 
 .footer-socials {
-  width: 40px;
+  width: 50px;
   border-radius: 50%;
   transition: all ease-in-out 0.3s;
   padding: 2px;
@@ -639,8 +639,8 @@ footer {
 .footer-socials-div {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  max-width: 600px;
+  justify-content: space-evenly;
+  max-width: 300px;
   margin: auto;
 }
 

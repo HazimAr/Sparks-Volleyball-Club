@@ -1,5 +1,6 @@
 import { GA_TRACKING_ID } from "@src/config.ts";
 import Document, { Html, Head, Main, NextScript } from "next/document";
+import Link from "next/link";
 import { ServerStyleSheet } from "styled-components";
 // eslint-disable-next-line import/no-default-export
 export default class MyDocument extends Document {
@@ -32,7 +33,6 @@ export default class MyDocument extends Document {
 		return (
 			<Html lang="en-us">
 				<Head>
-					<title>NextJS Boilerplate | Nik Schaefer</title>
 					<meta
 						name="description"
 						content="Boilerplate built to scale containing Typescript + NextJS + Google Analytics + ESLint + Jest + Styled Components + Icons"
