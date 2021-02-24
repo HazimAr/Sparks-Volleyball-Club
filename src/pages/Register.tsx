@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-export default function Temp() {
+export default function Register() {
 	return (
 		<div className="regist-div">
 			<p className="section-title" id="register-title">
