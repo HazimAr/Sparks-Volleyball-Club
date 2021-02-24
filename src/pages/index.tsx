@@ -6,7 +6,7 @@ export default function Home(): JSX.Element {
 		<>
 			<Intro />
 			<About />
-			<Register/>
+			<Register />
 			<Faq />
 			<Contact />
 		</>
