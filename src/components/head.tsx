@@ -1,4 +1,4 @@
-import React from "react";
+
 function scroll(offset: any, id: any) {
 	const yOffset = offset;
 	const element: any = document.getElementById(id);

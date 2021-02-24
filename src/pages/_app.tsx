@@ -20,6 +20,7 @@ export default function MyApp({ Component, pageProps }: AppProps): JSX.Element {
 		return () => {
 			router.events.off("routeChangeComplete", handleRouteChange);
 		};
+		console.log(router);
 	}, [router.events]);
 	return (
 		<>

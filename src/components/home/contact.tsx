@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useState } from "react";
+import { useState } from "react";
 
 // eslint-disable-next-line import/no-default-export
 export default function Contact(): JSX.Element {
