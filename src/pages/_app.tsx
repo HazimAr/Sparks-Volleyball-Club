@@ -20,7 +20,6 @@ export default function MyApp({ Component, pageProps }: AppProps): JSX.Element {
 		return () => {
 			router.events.off("routeChangeComplete", handleRouteChange);
 		};
-		console.log(router);
 	}, [router.events]);
 	return (
 		<>
@@ -28,11 +27,11 @@ export default function MyApp({ Component, pageProps }: AppProps): JSX.Element {
 				<title>{COMPANY_INFO.name}</title>
 				<link rel="icon" href="/favicon.ico" />
 				<link rel="preconnect" href="https://fonts.gstatic.com" />
-				<link
+				<link rel="preload" href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" as="style" /><link
 					href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
 					rel="stylesheet"
 				/>
-				<link
+				<link rel="preload" href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" as="style" /><link
 					href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
 					rel="stylesheet"
 				/>
