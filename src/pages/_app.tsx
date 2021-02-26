@@ -7,7 +7,7 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 
-import { COMPANY_INFO } from "../config";
+import { COMPANY_INFO, COMPANY_META } from "../config";
 
 // eslint-disable-next-line import/no-default-export
 export default function MyApp({ Component, pageProps }: AppProps): JSX.Element {
@@ -24,7 +24,7 @@ export default function MyApp({ Component, pageProps }: AppProps): JSX.Element {
 	return (
 		<>
 			<Head>
-				<title>{COMPANY_INFO.name}</title>
+				<title>{COMPANY_META.title}</title>
 				<link rel="icon" href="/favicon.ico" />
 				<link rel="preconnect" href="https://fonts.gstatic.com" />
 				<link rel="preload" href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" as="style" /><link

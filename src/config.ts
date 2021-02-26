@@ -20,6 +20,11 @@ const COMPANY_SOCIALS = {
 	youtube: "https://www.youtube.com/channel/UCrUowRgcYRZif4HXd9RgO4A",
 };
 
+const COMPANY_META = {
+	title: `Volleyball Club | ${COMPANY_INFO.name}`,
+	description: "Sparks Volleyball Club is committed to providing an excellent volleyball experience that promotes hard work, great attitudes, a genuine respect for the game, a “TEAM” concept at all times, and leadership development for each athlete."
+}
+
 export {
 	COMPANY_SOCIALS,
 	GA_TRACKING_ID,
@@ -27,5 +32,6 @@ export {
 	IS_TEST,
 	IS_BROWSER,
 	COMPANY_INFO,
+	COMPANY_META,
 	EMAIL_LIST,
 };
