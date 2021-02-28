@@ -10,6 +10,7 @@ body {
 
 html {
 	--color-primary: #9e2d2d;
+	--color-primary-hover: #8f2d2d;
 	--color-secondary: #f8f8f8;
 	--color-accent: #ffffff;
 	--font-color: #000000;
@@ -710,12 +711,16 @@ footer {
 
 .staff-div {
 	width: 300px;
-	height: 500px;
+	height: 520px;
 	display: flex;
 	flex-direction: column;
-	margin: 20px;
+	justify-content: space-between;
+	margin: 15px;
 	box-shadow: 0 0 30px rgba(0, 0, 0, 0.301);
 	transition: all 0.3s ease-in-out;
+	div{
+		height: 100%;
+	}
 }
 
 .staff-div:hover {
