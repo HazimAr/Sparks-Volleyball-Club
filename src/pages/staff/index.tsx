@@ -1,13 +1,15 @@
+/* eslint-disable import/no-default-export */
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import Image from "next/image";
 import Link from "next/link";
 import styled from "styled-components";
 
-interface staff {
-	img: any;
+type staff = {
+	img: string;
 	name: string;
 	role: string;
 	link: string;
-}
+};
 
 const staffData: staff[] = [
 	{
@@ -31,13 +33,13 @@ const staffData: staff[] = [
 	{
 		img: "/Images/Staff/Hazim.png",
 		name: "Lindsey Smith",
-		role: "Director of player development/Coach",
+		role: "Director of Development",
 		link: "/staff/Lindsey",
 	},
 	{
 		img: "/Images/Staff/Hazim.png",
-		name: "Kevin Smith",
-		role: "Director of player development/Coach",
+		name: "Keven Smith",
+		role: "Director of Development",
 		link: "/staff/Kevin",
 	},
 ];
@@ -46,12 +48,11 @@ const StyledButton = styled.button`
 	font-weight: bold;
 	background-color: var(--color-primary);
 	color: var(--font-color-o);
+	width:fit-content;
 	font-size: 27px;
-	margin: auto;
-	width: fit-content;
 	border-radius: 25px;
 	padding: 10px 20px;
-	margin-top:15px;
+	margin: 15px;
 	transition: all ease-in-out 0.3s;
 	border: none;
 	&:hover {
@@ -59,12 +60,46 @@ const StyledButton = styled.button`
 		cursor: pointer;
 	}
 `;
-function StaffCard(data: staff) {
+
+const StaffSection = styled.section`
+	width:300px;
+	display: flex;
+	flex-direction: column;
+	margin: 15px;
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.301);
+	transition: all 0.3s ease-in-out;
+	div {
+		display: flex;
+		flex-direction: column;
+		justify-content:space-between;
+		align-items:center;
+		
+	}
+	h2,
+	h4 {
+		font-weight: 400;
+		margin-bottom: 0;
+	}
+	&:hover {
+		box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+		cursor: pointer;
+		transform: scale(1.075);
+		transition: ease-in-out 0.15s;
+	}
+`;
+const StaffSectionDiv = styled.section`
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-bottom: 100px;
+	margin: auto;
+	max-width: 1200px;
+`;
+function staffCard(data: staff) {
 	return (
 		<Link href={data.link}>
-			<section className="staff-div">
+			<StaffSection>
 				<Image
-					className="staff-img"
 					src={data.img}
 					width={300}
 					height={300}
@@ -73,9 +108,9 @@ function StaffCard(data: staff) {
 				<div>
 					<h2>{data.name}</h2>
 					<h4>{data.role}</h4>
-					<StyledButton>Read More</StyledButton>
+					<StyledButton>Learn More</StyledButton>
 				</div>
-			</section>
+			</StaffSection>
 		</Link>
 	);
 }
@@ -84,9 +119,9 @@ export default function Staff() {
 	return (
 		<div>
 			<h1> SVBC Staff </h1>
-			<div className="staff-div-div">
-				{staffData.map((data) => StaffCard(data))}
-			</div>
+			<StaffSectionDiv>
+				{staffData.map((data) => staffCard(data))}
+			</StaffSectionDiv>
 		</div>
 	);
 }
