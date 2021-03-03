@@ -1,4 +1,4 @@
-// google analytics mearsurement id
+// google analytics measurement id
 const GA_TRACKING_ID = "G-X11P4GZF1E";
 const IS_PRODUCTION = process.env.NODE_ENV === "production";
 const IS_TEST = process.env.NODE_ENV === "test";
