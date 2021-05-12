@@ -11,7 +11,7 @@
 		"NextJS"
 	],
 	"scripts": {
-		"dev": "next dev",
+		"dev": "next dev -p 3069",
 		"build": "next build",
 		"start": "next start",
 		"clean": "npx prettier --write ."
