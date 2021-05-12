@@ -137,6 +137,9 @@ function HeaderDropDown() {
 					<a href="/register" onClick={invertDropDownMenu}>
 						Register
 					</a>
+					<a href="/register/summer" onClick={invertDropDownMenu}>
+						Summer Camp
+					</a>
 					{/* <a href='/staff' className='header-link' id='header-link'>Staff</a> */}
 					<a
 						href="/#faq"
@@ -176,7 +179,7 @@ export default function Header(): JSX.Element {
 	function HeaderContent(props: { menuColor: string }): JSX.Element {
 		return (
 			<>
-				<p className="header-name"/>
+				<p className="header-name" />
 				<div className="header-links-div">
 					<a href="/" onClick={scrollToTop} className="header-link">
 						Home
@@ -195,10 +198,7 @@ export default function Header(): JSX.Element {
 					>
 						Register
 					</a>
-					<a
-						href="/register/summer"
-						className="header-link"
-					>
+					<a href="/register/summer" className="header-link">
 						Summer Camp
 					</a>
 					{/* <a href='/staff' className='header-link' id='header-link'>Staff</a> */}
