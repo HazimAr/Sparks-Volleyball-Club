@@ -196,7 +196,7 @@ export default function Header(): JSX.Element {
 						Register
 					</a>
 					<a
-						href="/register"
+						href="/register/summer"
 						className="header-link"
 					>
 						Summer Camp
