@@ -137,9 +137,6 @@ function HeaderDropDown() {
 					<a href="/register" onClick={invertDropDownMenu}>
 						Register
 					</a>
-					<a href="/register/summer" onClick={invertDropDownMenu}>
-						Summer Camp
-					</a>
 					{/* <a href='/staff' className='header-link' id='header-link'>Staff</a> */}
 					<a
 						href="/#faq"
@@ -197,9 +194,6 @@ export default function Header(): JSX.Element {
 						id="header-register"
 					>
 						Register
-					</a>
-					<a href="/register/summer" className="header-link">
-						Summer Camp
 					</a>
 					{/* <a href='/staff' className='header-link' id='header-link'>Staff</a> */}
 					<a
