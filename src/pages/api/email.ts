@@ -1,7 +1,7 @@
 import mailgun from "mailgun-js";
 import type { NextApiRequest, NextApiResponse } from "next";
 
-import { COMPANY_INFO, EMAIL_LIST } from "../../config";
+import { COMPANY_INFO } from "../../config";
 
 const DOMAIN = "mail.sparksvolleyballclub.com";
 
