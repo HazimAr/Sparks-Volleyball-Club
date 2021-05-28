@@ -31,7 +31,7 @@ export default function Email(
 		};
 		const data = {
 			from: `${body.name} <${body.email}>`,
-			to: `${COMPANY_INFO.email}, ${EMAIL_LIST} `,
+			to: `${COMPANY_INFO.email}`,
 			subject: `${body.subject}`,
 			text: `
             name: ${body.name}
