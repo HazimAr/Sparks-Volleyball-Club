@@ -16,7 +16,7 @@ Proper Readme will follow
 ## Setup
 
 Click use this template or clone with
-`git clone https://github.com/NikSchaefer/nextjs-typescript/`
+`git clone https://github.com/HazimAr/SparksNext/`
 
 install dependicies `npm i` or `yarn`
 
