@@ -39,6 +39,13 @@ const registerData: register[] = [
 
 		link: "/#faq",
 	},
+	{
+		img: "june.jpg",
+		name: "Open Gym",
+
+		link:
+			"https://www.eventbrite.com/e/2021-las-vegas-recruiting-combine-registration-156595861437",
+	},
 ];
 
 const StyledButton = styled.button`
