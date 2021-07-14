@@ -37,15 +37,20 @@ const registerData: register[] = [
 		img: "gym.jpg",
 		name: "Open Gym",
 
-		link: "/#faq",
+		link: "",
 	},
 	{
 		img: "youth.jpg",
 		name: "Open Gym",
 
-		link:
-			"https://www.eventbrite.com/e/2021-las-vegas-recruiting-combine-registration-156595861437",
+		link: "",
+	},{
+		img: "clinic.jpg",
+		name: "Clinic",
+
+		link: "/register/clinic",
 	},
+
 ];
 
 const StyledButton = styled.button`
