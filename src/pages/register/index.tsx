@@ -40,7 +40,7 @@ const registerData: register[] = [
 		link: "/#faq",
 	},
 	{
-		img: "june.jpg",
+		img: "youth.jpg",
 		name: "Open Gym",
 
 		link:
