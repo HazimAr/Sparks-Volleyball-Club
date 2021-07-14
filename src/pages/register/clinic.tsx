@@ -11,7 +11,7 @@ export default function Register() {
 					id="iframe-register"
 					title=""
 					style={{ width: "100%" }}
-					src="https://docs.google.com/forms/d/e/1FAIpQLSdLrAnJJA-GqknwmDfDuCYuKsyU5ULcVJrNdeJLO7TwvmQvAA/viewform?embedded=true"
+					src="https://docs.google.com/forms/d/e/1FAIpQLScA4d849LwcZwkZSg4tGRfFk0NV0Hjniq2GKP1bIqcgrlnkgQ/viewform?embedded=true"
 					width="650"
 					height="650"
 					frameBorder={0}
