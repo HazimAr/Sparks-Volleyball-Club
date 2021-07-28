@@ -12,11 +12,6 @@ type register = {
 
 const registerData: register[] = [
 	{
-		img: "boys.jpg",
-		name: "Boys Short Season",
-		link: "/register/boys",
-	},
-	{
 		img: "girls.jpg",
 		name: "Girls Close Date",
 		link: "/register/girls",
@@ -28,29 +23,31 @@ const registerData: register[] = [
 		link: "/register/girls2",
 	},
 	{
-		img: "summer.jpg",
-		name: "Summer Camp",
-
-		link: "/register/summer",
-	},
-	{
 		img: "gym.jpg",
 		name: "Open Gym",
 
 		link: "",
 	},
 	{
-		img: "youth.jpg",
-		name: "Open Gym",
-
-		link: "",
-	},{
 		img: "clinic.jpg",
 		name: "Clinic",
 
 		link: "/register/clinic",
 	},
+	{
+		img: "middleSchool.png",
+		name: "Middle School Fall Ball",
 
+		link:
+			"https://sparksvolleyballclub.sportngin.com/register/form/826565113",
+	},
+	{
+		img: "elementarySchool.png",
+		name: "Elementary School Fall Ball",
+
+		link:
+			"https://sparksvolleyballclub.sportngin.com/register/form/826565113",
+	},
 ];
 
 const StyledButton = styled.button`
@@ -112,7 +109,7 @@ function staffCard(data: register) {
 				<StaffSection>
 					<Image
 						src={`/Images/register/${data.img}`}
-						width={300}
+						width={350}
 						height={400}
 						alt={data.name}
 					/>
