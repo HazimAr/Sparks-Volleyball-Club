@@ -93,7 +93,7 @@ const StaffSectionDiv = styled.section`
 
 function staffCard(data: register) {
 	return (
-		<Link href={data?.link}>
+		<Link href={data?.link || ""}>
 			<a target="_blank" rel="noreferrer">
 				<div>
 					<StaffSection>
