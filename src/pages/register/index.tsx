@@ -7,15 +7,10 @@ import styled from "styled-components";
 type register = {
 	img: string;
 	name: string;
-	link: string;
+	link?: string;
 };
 
 const registerData: register[] = [
-	{
-		img: "girls.jpg",
-		name: "Girls Close Date",
-		link: "/register/girls",
-	},
 	{
 		img: "girls2.jpg",
 		name: "Girls Far Data",
@@ -27,12 +22,6 @@ const registerData: register[] = [
 		name: "Open Gym",
 
 		link: "",
-	},
-	{
-		img: "clinic.jpg",
-		name: "Clinic",
-
-		link: "/register/clinic",
 	},
 	{
 		img: "middleSchool.png",
@@ -104,7 +93,7 @@ const StaffSectionDiv = styled.section`
 
 function staffCard(data: register) {
 	return (
-		<Link href={data.link}>
+		<Link href={data?.link}>
 			<div>
 				<StaffSection>
 					<Image
