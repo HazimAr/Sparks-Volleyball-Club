@@ -94,17 +94,19 @@ const StaffSectionDiv = styled.section`
 function staffCard(data: register) {
 	return (
 		<Link href={data?.link}>
-			<div>
-				<StaffSection>
-					<Image
-						src={`/Images/register/${data.img}`}
-						width={350}
-						height={400}
-						alt={data.name}
-					/>
-				</StaffSection>
-				<StyledButton>Learn More</StyledButton>
-			</div>
+			<a target="_blank" rel="noreferrer">
+				<div>
+					<StaffSection>
+						<Image
+							src={`/Images/register/${data.img}`}
+							width={350}
+							height={400}
+							alt={data.name}
+						/>
+					</StaffSection>
+					<StyledButton>Learn More</StyledButton>
+				</div>
+			</a>
 		</Link>
 	);
 }
