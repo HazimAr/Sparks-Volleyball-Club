@@ -63,9 +63,9 @@ export default function Footer() {
 					Sparks Volleyball Club
 				</span>
 			</p>
-			<a href="https://webdefyer.com" target="_blank" rel="noreferrer">
-				Designed by:{" "}
-				<span style={{ color: "var(--color-primary)" }}>Webdefyer</span>
+			<a href="https://webdefy.tech" target="_blank" rel="noreferrer">
+				Made with ❤️ by:{" "}
+				<span style={{ color: "var(--color-primary)" }}>Hazim Arafa</span>
 			</a>
 		</footer>
 	);
