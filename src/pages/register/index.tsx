@@ -20,8 +20,12 @@ const registerData: register[] = [
 	{
 		img: "gym.jpg",
 		name: "Open Gym",
-
 		link: "",
+	},
+	{
+		img: "sparksGiving.jpg",
+		name: "Sparks Giving",
+		link: "/sparks-giving",
 	},
 	{
 		img: "middleSchool.png",
