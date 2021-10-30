@@ -24,7 +24,7 @@ export default function Register() {
 					width={500}
 					height={750}
 					id="register-form-img"
-					src="/Images/Sparks/8-22-2_Tourney.jpg"
+					src="/Images/Sparks/8-22-2_Tourney-24.jpg"
 				/>
 			</div>
 		</div>
