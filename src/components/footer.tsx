@@ -7,6 +7,7 @@ import {
   Link,
   Stack,
   Text,
+  useToken,
 } from "@chakra-ui/react";
 import Container from "./container";
 import ContainerInside from "./containerInside";
@@ -17,22 +18,24 @@ import {
   FaInstagram,
   FaYoutube,
   FaTiktok,
+  FaMapPin,
 } from "react-icons/fa";
-import NextImage from "next/image";
+// import NextImage from "next/image";
 import NextChakraLink from "./nextChakraLink";
 
 export default function Footer() {
+  const primary = useToken("colors", "primary");
   return (
     <Container as="footer" bg="accent" color="whiteAlpha.600">
       <ContainerInside>
         <Flex justify="space-between">
           <Stack>
-            <NextImage
+            {/* <NextImage
               src="/logo.png"
-              // layout="responsive"
+              layout="responsive"
               width="50px"
               height="50px"
-            />
+            /> */}
             <Text maxW="60ch">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam
               ad est reprehenderit omnis doloribus iusto quae pariatur eum.
@@ -85,6 +88,11 @@ export default function Footer() {
               href="mailto:sparksvolleyballclub@gmail.com?subject=Contacted From Website"
               info="SparksVolleyballClub@gmail.com"
             />
+            <Contact
+              icon={<FaMapPin />}
+              href=""
+              info="3778 W. Cheyenne Ave STE 120"
+            />
           </Stack>
         </Flex>
       </ContainerInside>
@@ -96,10 +104,12 @@ export default function Footer() {
             All Rights Reserved
           </Text>
 
-          <HStack>
-            <NextChakraLink href="/privacy">Privacy Policy</NextChakraLink>
-            <NextChakraLink href="/terms">Terms Of Use</NextChakraLink>
-          </HStack>
+          <Link href="https://hazim.tech" isExternal>
+            Designed & Developed by:{" "}
+            <span style={{ color: primary, fontWeight: "bold" }}>
+              Hazim Arafa
+            </span>
+          </Link>
         </Flex>
       </ContainerInside>
     </Container>
@@ -109,7 +119,14 @@ export default function Footer() {
 function FooterIcon({ icon, href }) {
   return (
     <Link href={href} isExternal>
-      <Circle fontSize="xl" p={3} bg="primary" color="white">
+      <Circle
+        transition="all ease .3s"
+        _hover={{ background: "transparent" }}
+        fontSize="2xl"
+        p={3}
+        bg="primary"
+        color="white"
+      >
         {icon}
       </Circle>
     </Link>
