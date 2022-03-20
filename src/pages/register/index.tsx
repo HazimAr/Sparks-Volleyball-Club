@@ -27,20 +27,11 @@ const registerData: register[] = [
 		name: "Sparks Giving",
 		link: "/register/sparks-giving",
 	},
-	// {
-	// 	img: "middleSchool.png",
-	// 	name: "Middle School Fall Ball",
-
-	// 	link:
-	// 		"https://sparksvolleyballclub.sportngin.com/register/form/498437371",
-	// },
-	// {
-	// 	img: "elementarySchool.png",
-	// 	name: "Elementary School Fall Ball",
-
-	// 	link:
-	// 		"https://sparksvolleyballclub.sportngin.com/register/form/826565113",
-	// },
+	{
+		img: "summer.jpg",
+		name: "Summer Camp",
+		link: "https://sparksvolleyballclub.sportngin.com/register/form/938359750",
+	},
 ];
 
 const StyledButton = styled.button`
