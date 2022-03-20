@@ -4,21 +4,16 @@ const theme = extendTheme({
   colors: {
     primary: "#9e2d2d",
     secondary: "white",
-    accent: "#1flflf",
+    accent: "#1f1f1f",
   },
   styles: {
     global: () => ({
-      html: {
-        height: "100%",
-      },
       body: {
         fontFamily:
           "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif",
-        color: "white",
-        lineHeight: "base",
+        // color: "white",
         padding: 0,
         margin: 0,
-        backgroundColor: "secondary",
       },
       a: {
         color: "inherit",
