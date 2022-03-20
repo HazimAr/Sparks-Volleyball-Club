@@ -1,9 +1,9 @@
-import { Container as ChakraContainer } from "@chakra-ui/react";
+import { Center } from "@chakra-ui/react";
 
 export default function Container({ children, ...props }) {
   return (
-    <ChakraContainer {...props} w="100vw">
+    <Center w="100vw" flexDir="column" {...props}>
       {children}
-    </ChakraContainer>
+    </Center>
   );
 }
