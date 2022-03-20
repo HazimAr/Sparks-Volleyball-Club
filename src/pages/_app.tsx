@@ -1,16 +1,15 @@
-import "@styles/global.css";
-import Footer from "@components/foot";
-import Header from "@components/head";
+import { ChakraProvider } from "@chakra-ui/react";
+import Footer from "@components/footer";
+import Header from "@components/header";
+import theme from "@styles/theme";
 import { pageview } from "@lib/gtag";
+import { META } from "config";
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 
-import { COMPANY_META } from "../config";
-
-// eslint-disable-next-line import/no-default-export
-export default function MyApp({ Component, pageProps }: AppProps): JSX.Element {
+export default function MyApp({ Component, pageProps }: AppProps) {
 	const router = useRouter();
 	useEffect(() => {
 		const handleRouteChange = (url: unknown) => {
@@ -21,25 +20,20 @@ export default function MyApp({ Component, pageProps }: AppProps): JSX.Element {
 			router.events.off("routeChangeComplete", handleRouteChange);
 		};
 	}, [router.events]);
+	
 	return (
 		<>
 			<Head>
-				<title>{COMPANY_META.title}</title>
+				<title>{META.title}</title>
 				<link rel="icon" href="/favicon.ico" />
-				<link rel="preconnect" href="https://fonts.gstatic.com" />
-				<link rel="preload" href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" as="style" /><link
-					href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
-					rel="stylesheet"
-				/>
-				<link rel="preload" href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" as="style" /><link
-					href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
-					rel="stylesheet"
-				/>
 			</Head>
+			<ChakraProvider theme={theme}>
+				<Header />
 
-			<Header />
-			<Component {...pageProps} />
-			<Footer />
+				<Component {...pageProps} />
+
+				<Footer />
+			</ChakraProvider>
 		</>
 	);
 }

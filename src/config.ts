@@ -1,38 +1,23 @@
 // google analytics measurement id
-const GA_TRACKING_ID = "G-X11P4GZF1E";
-const IS_PRODUCTION = process.env.NODE_ENV === "production";
-const IS_TEST = process.env.NODE_ENV === "test";
-const IS_BROWSER = typeof window !== "undefined";
+const GA_TRACKING_ID = "";
 
-const COMPANY_INFO = {
-	name: "Sparks Volleyball Club",
-	email: "SparksVolleyballClub@gmail.com",
-	phone: "(702) 502-9462",
-	address1: "3778 W. Cheyenne Ave STE 120, ",
-	address2: "N. Las Vegas, NV 8903",
-};
-const EMAIL_LIST =
-	"hazimarafa69@gmail.com, sparksvolleyballclub@gmail.com, nevadavolleyballcenter@gmail.com";
-
-const COMPANY_SOCIALS = {
-	instagram: "https://www.instagram.com/sparks_vbc_lv/",
-	facebook: "https://www.facebook.com/SparksVBCLV",
-	youtube: "https://www.youtube.com/channel/UCrUowRgcYRZif4HXd9RgO4A",
+type MetaType = {
+	title: string;
+	lang: string;
+	description: string;
+	url: string;
+	image: string;
+	tags: string[];
 };
 
-const COMPANY_META = {
-	title: `Volleyball Club | ${COMPANY_INFO.name}`,
+const META: MetaType = {
+	title: "NextJS ChakraUI Template | Hazim Arafa",
+	lang: "en-us",
 	description:
-		"Sparks Volleyball Club is committed to providing an excellent volleyball experience that promotes hard work, great attitudes, a genuine respect for the game, a “TEAM” concept at all times, and leadership development for each athlete.",
+		"Boilerplate built to scale containing Typescript + NextJS + ChakraUI + Google Analytics + ESLint + Jest + Styled Components + Icons",
+	url: "https://boilerplate.hazimarafa.tech",
+	image: "/logo.png",
+	tags: ["nextjs", "typescript", "chakraui", "google analytics", "eslint", "jest", "styled components", "icons"]
 };
 
-export {
-	COMPANY_SOCIALS,
-	GA_TRACKING_ID,
-	IS_PRODUCTION,
-	IS_TEST,
-	IS_BROWSER,
-	COMPANY_INFO,
-	COMPANY_META,
-	EMAIL_LIST,
-};
+export { GA_TRACKING_ID, META };

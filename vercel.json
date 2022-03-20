@@ -1,7 +1,8 @@
 {
-	"trailingSlash": false,
-	"redirects": [],
-	"github": {
-		"silent": true
-	}
+  "trailingSlash": false,
+  "redirects": [],
+  "github": {
+    "silent": true,
+    "autoJobCancelation": true
+  }
 }
