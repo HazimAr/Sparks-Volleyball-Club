@@ -1,4 +1,5 @@
 import {
+  Center,
   Circle,
   Divider,
   Flex,
@@ -7,7 +8,6 @@ import {
   Link,
   Stack,
   Text,
-  useToken,
 } from "@chakra-ui/react";
 import Container from "./container";
 import ContainerInside from "./containerInside";
@@ -24,7 +24,6 @@ import {
 import NextChakraLink from "./nextChakraLink";
 
 export default function Footer() {
-  const primary = useToken("colors", "primary");
   return (
     <Container as="footer" bg="accent" color="whiteAlpha.600">
       <ContainerInside>
@@ -36,12 +35,7 @@ export default function Footer() {
               width="50px"
               height="50px"
             /> */}
-            <Text maxW="60ch">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam
-              ad est reprehenderit omnis doloribus iusto quae pariatur eum.
-              Explicabo minus atque ullam pariatur eius quas magni perferendis
-              neque esse aliquid.
-            </Text>
+            <Center h="100px">LOGO GOES HERE</Center>
             <HStack gap={5} justify="center">
               <FooterIcon icon={<FaInstagram />} href="/instagram" />
               <FooterIcon icon={<FaTiktok />} href="/tiktok" />
@@ -49,7 +43,7 @@ export default function Footer() {
               <FooterIcon icon={<FaYoutube />} href="/youtube" />
             </HStack>
           </Stack>
-          <Stack spacing={2}>
+          <Stack>
             <Heading size="sm" color="white">
               Quick Links
             </Heading>
@@ -58,7 +52,7 @@ export default function Footer() {
             <NextChakraLink href="/about">About</NextChakraLink>
             <NextChakraLink href="/staff">Staff</NextChakraLink>
           </Stack>
-          <Stack spacing={2}>
+          <Stack>
             <Heading size="sm" color="white">
               Follow
             </Heading>
@@ -73,7 +67,14 @@ export default function Footer() {
               Youtube
             </NextChakraLink>
           </Stack>
-          <Stack spacing={2}>
+          <Stack>
+            <Heading size="sm" color="white">
+              Legal
+            </Heading>
+            <NextChakraLink href="/privacy">Privacy</NextChakraLink>
+            <NextChakraLink href="/terms">Terms</NextChakraLink>
+          </Stack>
+          <Stack>
             <Heading size="sm" color="white">
               Contact Us
             </Heading>
@@ -105,11 +106,8 @@ export default function Footer() {
           </Text>
 
           <Link href="https://hazim.tech" isExternal>
-            Designed & Developed with<span style={{ color: "white" }}>💖</span>
-            by:{" "}
-            <span style={{ color: primary, fontWeight: "bold" }}>
-              Hazim Arafa
-            </span>
+            Designed & Developed with<span>💖</span>
+            by: <span style={{ fontWeight: "bold" }}>Hazim Arafa</span>
           </Link>
         </Flex>
       </ContainerInside>

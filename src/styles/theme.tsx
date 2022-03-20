@@ -11,9 +11,6 @@ const theme = extendTheme({
       body: {
         fontFamily:
           "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif",
-        // color: "white",
-        padding: 0,
-        margin: 0,
       },
       a: {
         color: "inherit",
@@ -21,6 +18,9 @@ const theme = extendTheme({
       },
       ul: {
         listStyle: "none",
+      },
+      span: {
+        color: "primary",
       },
       "&::-webkit-scrollbar": {
         width: "0.6em",
