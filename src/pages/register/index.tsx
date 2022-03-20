@@ -12,6 +12,11 @@ type register = {
 
 const registerData: register[] = [
 	{
+		img: "summer.jpg",
+		name: "Summer Camp",
+		link: "https://sparksvolleyballclub.sportngin.com/register/form/938359750",
+	},
+	{
 		img: "girls2.jpg",
 		name: "Girls Far Data",
 
@@ -21,11 +26,6 @@ const registerData: register[] = [
 		img: "gym.jpg",
 		name: "Open Gym",
 		link: "",
-	},
-	{
-		img: "summer.jpg",
-		name: "Summer Camp",
-		link: "https://sparksvolleyballclub.sportngin.com/register/form/938359750",
 	},
 ];
 
