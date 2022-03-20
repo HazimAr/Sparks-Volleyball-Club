@@ -1,4 +1,5 @@
 import {
+  Button,
   Center,
   Circle,
   Divider,
@@ -8,6 +9,8 @@ import {
   Link,
   Stack,
   Text,
+  useToken,
+  VStack,
 } from "@chakra-ui/react";
 import Container from "./container";
 import ContainerInside from "./containerInside";
@@ -24,9 +27,37 @@ import {
 import NextChakraLink from "./nextChakraLink";
 
 export default function Footer() {
+  const primary = useToken("colors", "primary");
   return (
     <Container as="footer" bg="accent" color="whiteAlpha.600">
       <ContainerInside>
+        <Center
+          bg="gradient"
+          py={10}
+          pos="relative"
+          bottom={100}
+          rounded="3xl"
+          textAlign="center"
+          boxShadow={`0px 0px 100px ${primary}`}
+        >
+          <VStack maxW="500px" px="25px">
+            <Heading
+              color="white"
+              fontSize={{ base: "xl", sm: "3xl", lg: "4xl" }}
+              as="h1"
+            >
+              Upgrade your skills today!
+            </Heading>
+            <Text fontSize={{ base: "sm", sm: "lg" }}>
+              Build up your volleyball knowledge.
+            </Text>
+            <HStack>
+              <NextChakraLink href="/register">
+                <Button>Register</Button>
+              </NextChakraLink>
+            </HStack>
+          </VStack>
+        </Center>
         <Flex justify="space-between">
           <Stack>
             {/* <NextImage

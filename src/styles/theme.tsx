@@ -2,9 +2,11 @@ import { extendTheme } from "@chakra-ui/react";
 
 const theme = extendTheme({
   colors: {
-    primary: "#9e2d2d",
+    primary: "#D42B2B",
     secondary: "white",
     accent: "#1f1f1f",
+    gradient:
+      "linear-gradient(90deg, hsla(0, 66%, 50%, 1) 0%, hsla(0, 100%, 50%, 1) 100%); hsla(0, 66%, 50%, 1);",
   },
   styles: {
     global: () => ({
