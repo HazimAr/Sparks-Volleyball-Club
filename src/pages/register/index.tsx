@@ -23,11 +23,6 @@ const registerData: register[] = [
 		link: "",
 	},
 	{
-		img: "sparksGiving.jpg",
-		name: "Sparks Giving",
-		link: "/register/sparks-giving",
-	},
-	{
 		img: "summer.jpg",
 		name: "Summer Camp",
 		link: "https://sparksvolleyballclub.sportngin.com/register/form/938359750",
