@@ -21,9 +21,9 @@ export default function Register({ forms }: { forms: QueryDatabaseResponse }) {
               // @ts-ignore
               name={member.properties.Name.title[0].plain_text}
               // @ts-ignore
-              title={member.properties.Title.rich_text[0].plain_text}
+              form={member.properties.Form.url}
               // @ts-ignore
-              bio={member.properties.Bio.rich_text[0].plain_text}
+              description={member.properties.Description.rich_text[0].plain_text}
               // @ts-ignore
               img={member.properties.Image.files[0].file.url}
             />
@@ -47,7 +47,8 @@ export async function getServerSideProps() {
   };
 }
 
-function Form({ name, title, img /* bio */ }) {
+function Form({ name, form, img, description }) {
+  console.log(form, description);
   return (
     <Stack
       w="200px"
@@ -57,8 +58,6 @@ function Form({ name, title, img /* bio */ }) {
       <Image src={img} borderRadius="3xl" />
       <Stack>
         <Heading size="md">{name}</Heading>
-        <Heading size="sm">{title}</Heading>
-        {/* <Text>{bio}</Text> */}
       </Stack>
     </Stack>
   );
