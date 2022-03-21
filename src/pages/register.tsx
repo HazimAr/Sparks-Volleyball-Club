@@ -39,7 +39,7 @@ export async function getServerSideProps() {
   });
 
   const forms = await notion.databases.query({
-    database_id: "199a36871ce14867a02c7f43182b5051",
+    database_id: "309e8f22df49471ea80d8b9af61fdc75",
   });
 
   return {
