@@ -1,6 +1,7 @@
 import {
   Heading,
   Image,
+  Link,
   SimpleGrid,
   Stack,
   // Text,
@@ -16,16 +17,17 @@ export default function Register({ forms }: { forms: QueryDatabaseResponse }) {
       <Heading as="h1">Register</Heading>
       <SimpleGrid columns={3} gap={10}>
         {forms.results.length &&
-          forms.results.map((member) => (
+          forms.results.map((form) => (
             <Form
+              key={form.id}
               // @ts-ignore
-              name={member.properties.Name.title[0].plain_text}
+              name={form.properties.Name.title[0].plain_text}
               // @ts-ignore
-              form={member.properties.Form.url}
+              form={form.properties.Form.url}
               // @ts-ignore
-              description={member.properties.Description.rich_text[0].plain_text}
+              description={form.properties.Description.rich_text[0].plain_text}
               // @ts-ignore
-              img={member.properties.Image.files[0].file.url}
+              img={form.properties.Image.files[0].file.url}
             />
           ))}
       </SimpleGrid>
@@ -48,17 +50,19 @@ export async function getServerSideProps() {
 }
 
 function Form({ name, form, img, description }) {
-  console.log(form, description);
+  console.log(description);
   return (
-    <Stack
-      w="200px"
-      transition="all ease .3s"
-      // _hover={{ transform: "scale(1.1)", cursor: "pointer" }}
-    >
-      <Image src={img} borderRadius="3xl" />
-      <Stack>
-        <Heading size="md">{name}</Heading>
-      </Stack>
-    </Stack>
+    <Link href={form} isExternal>
+      <VStack
+        w="200px"
+        transition="all ease .3s"
+        _hover={{ transform: "scale(1.1)" }}
+      >
+        <Image src={img} borderRadius="3xl" />
+        <Stack>
+          <Heading size="md">{name}</Heading>
+        </Stack>
+      </VStack>
+    </Link>
   );
 }

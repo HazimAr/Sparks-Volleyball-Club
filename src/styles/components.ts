@@ -38,3 +38,16 @@ export const Button: ComponentStyleConfig = {
     variant: "primary",
   },
 };
+
+export const Link: ComponentStyleConfig = {
+  baseStyle: {
+    _hover: {
+      textDecoration: {},
+    },
+    _active: {},
+    _focus: {},
+  },
+  sizes: {},
+  variants: {},
+  defaultProps: {},
+};

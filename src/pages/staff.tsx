@@ -22,6 +22,7 @@ export default function Staff({
         {staffMembers.results.length &&
           staffMembers.results.map((member) => (
             <StaffCard
+              key={member.id}
               // @ts-ignore
               name={member.properties.Name.title[0].plain_text}
               // @ts-ignore
