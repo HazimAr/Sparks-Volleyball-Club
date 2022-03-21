@@ -2,7 +2,7 @@ import { Center } from "@chakra-ui/react";
 
 export default function Container({ children, ...props }) {
   return (
-    <Center as="section" w="100vw" flexDir="column" {...props}>
+    <Center as="section" flexDir="column" {...props}>
       {children}
     </Center>
   );

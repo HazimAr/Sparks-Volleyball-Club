@@ -13,6 +13,10 @@ const theme = extendTheme({
       body: {
         fontFamily:
           "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif",
+        padding: 0,
+        margin: 0,
+        top: 0,
+        left: 0,
       },
       a: {
         color: "inherit",
