@@ -3,7 +3,7 @@ import {
   Image,
   SimpleGrid,
   Stack,
-  Text,
+  // Text,
   VStack,
 } from "@chakra-ui/react";
 import { Client } from "@notionhq/client";
@@ -17,14 +17,18 @@ export default function Staff({
   console.log(staffMembers);
   return (
     <VStack>
-      <Heading>Staff</Heading>
+      <Heading as="h1">Staff</Heading>
       <SimpleGrid columns={3} gap={10}>
         {staffMembers.results.length &&
           staffMembers.results.map((member) => (
             <StaffCard
+              // @ts-ignore
               name={member.properties.Name.title[0].plain_text}
+              // @ts-ignore
               title={member.properties.Title.rich_text[0].plain_text}
+              // @ts-ignore
               bio={member.properties.Bio.rich_text[0].plain_text}
+              // @ts-ignore
               img={member.properties.Image.files[0].file.url}
             />
           ))}
