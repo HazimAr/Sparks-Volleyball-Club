@@ -22,10 +22,12 @@ export const Button: ComponentStyleConfig = {
     primary: {
       bg: "primary",
       color: "secondary",
+      _hover: { bg: "secondary", color: "primary" },
     },
     secondary: {
       bg: "secondary",
       color: "primary",
+      _hover: { bg: "primary", color: "secondary" },
     },
     accent: {
       bg: "accent",
@@ -41,11 +43,9 @@ export const Button: ComponentStyleConfig = {
 
 export const Link: ComponentStyleConfig = {
   baseStyle: {
-    _hover: {
-      textDecoration: {},
-    },
-    _active: {},
-    _focus: {},
+    _active: { boxShadow: "none" },
+    _focus: { boxShadow: "none" },
+    _hover: { textDecoration: "none" },
   },
   sizes: {},
   variants: {},

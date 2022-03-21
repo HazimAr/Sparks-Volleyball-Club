@@ -1,4 +1,5 @@
 import {
+  Button,
   Heading,
   Image,
   Link,
@@ -56,12 +57,13 @@ function Form({ name, form, img, description }) {
       <VStack
         w="200px"
         transition="all ease .3s"
-        _hover={{ transform: "scale(1.1)" }}
+        _hover={{ transform: "scale(1.05)" }}
       >
         <Image src={img} borderRadius="3xl" />
-        <Stack>
+        <VStack>
           <Heading size="md">{name}</Heading>
-        </Stack>
+          <Button>Register</Button>
+        </VStack>
       </VStack>
     </Link>
   );
