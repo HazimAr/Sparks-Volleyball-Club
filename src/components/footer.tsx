@@ -29,7 +29,7 @@ import NextChakraLink from "./nextChakraLink";
 export default function Footer() {
   const primary = useToken("colors", "primary");
   return (
-    <Container as="footer" bg="accent" color="whiteAlpha.600">
+    <Container as="footer" bg="accent" color="whiteAlpha.600" mt={200}>
       <ContainerInside>
         <Center
           bg="gradient"
@@ -53,7 +53,7 @@ export default function Footer() {
             </Text>
             <HStack>
               <NextChakraLink href="/register">
-                <Button>Register</Button>
+                <Button variant="secondary">Register</Button>
               </NextChakraLink>
             </HStack>
           </VStack>

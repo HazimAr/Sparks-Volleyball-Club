@@ -1,4 +1,5 @@
 import { extendTheme } from "@chakra-ui/react";
+import { Button } from "./components";
 
 const theme = extendTheme({
   colors: {
@@ -8,11 +9,15 @@ const theme = extendTheme({
     gradient:
       "linear-gradient(90deg, hsla(0, 66%, 50%, 1) 0%, hsla(0, 100%, 50%, 1) 100%); hsla(0, 66%, 50%, 1);",
   },
+  components: {
+    Button,
+  },
   styles: {
     global: () => ({
       body: {
         fontFamily:
           "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif",
+        color: "black",
       },
       a: {
         color: "inherit",
