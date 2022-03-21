@@ -1,23 +1,23 @@
 // google analytics measurement id
 const GA_TRACKING_ID = "";
 
-type MetaType = {
-	title: string;
-	lang: string;
-	description: string;
-	url: string;
-	image: string;
-	tags: string[];
-};
-
-const META: MetaType = {
-	title: "NextJS ChakraUI Template | Hazim Arafa",
-	lang: "en-us",
-	description:
-		"Boilerplate built to scale containing Typescript + NextJS + ChakraUI + Google Analytics + ESLint + Jest + Styled Components + Icons",
-	url: "https://boilerplate.hazimarafa.tech",
-	image: "/logo.png",
-	tags: ["nextjs", "typescript", "chakraui", "google analytics", "eslint", "jest", "styled components", "icons"]
+const META = {
+  title: "Sparks Volleyball Club | Empowering Youth Volleyball",
+  lang: "en-us",
+  description:
+    "Sparks Volleyball Club is committed to providing an excellent volleyball experience that promotes hard work, great attitudes, a genuine respect for the game, a “TEAM” concept at all times, and leadership development for each athlete.",
+  url: "https://sparksvolleyballclub.com/",
+  image: "/logo.png",
+  tags: [
+    "nextjs",
+    "typescript",
+    "chakraui",
+    "google analytics",
+    "eslint",
+    "jest",
+    "styled components",
+    "icons",
+  ],
 };
 
 export { GA_TRACKING_ID, META };

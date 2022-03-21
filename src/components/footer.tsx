@@ -122,7 +122,7 @@ export default function Footer() {
             />
             <Contact
               icon={<FaMapPin />}
-              href=""
+              href="https://www.google.com/maps/dir/36.2180943,-115.249782/sparks+volleyball+club/@36.2178527,-115.2545354,13z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x80c8c1a7459214d1:0xbbbbae1da4ca6fcb!2m2!1d-115.1901779!2d36.2189483"
               info="3778 W. Cheyenne Ave STE 120"
             />
           </Stack>
@@ -165,11 +165,11 @@ function FooterIcon({ icon, href }) {
 
 function Contact({ icon, href, info }) {
   return (
-    <NextChakraLink href={href}>
+    <Link href={href} isExternal>
       <HStack>
         <Circle>{icon}</Circle>
         <Text>{info}</Text>
       </HStack>
-    </NextChakraLink>
+    </Link>
   );
 }
