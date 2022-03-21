@@ -1,5 +1,4 @@
-// google analytics measurement id
-const GA_TRACKING_ID = "";
+const GA_TRACKING_ID = "G-X11P4GZF1E";
 
 const META = {
   title: "Sparks Volleyball Club | Empowering Youth Volleyball",
