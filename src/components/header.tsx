@@ -17,7 +17,7 @@ export default function Header() {
       onScroll={() =>
         window.scrollY == 0 ? setBackground(false) : setBackground(true)
       }
-	  zIndex={100}
+      zIndex={100}
     >
       <ContainerInside>
         <Flex align="center" justify="space-between">
@@ -25,7 +25,9 @@ export default function Header() {
           <Flex gap={10}>
             <Link href="/">Home</Link>
             <Link href="/register">Register</Link>
+            <Link href="/staff">Staff</Link>
             <Link href="/story">Our Story</Link>
+            <Link href="/sponsors">Sponsors</Link>
             <Link href="/contact">Contact</Link>
           </Flex>
         </Flex>
