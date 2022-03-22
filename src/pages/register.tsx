@@ -4,7 +4,6 @@ import {
   Image,
   Link,
   SimpleGrid,
-  Stack,
   // Text,
   VStack,
 } from "@chakra-ui/react";
