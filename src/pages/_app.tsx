@@ -7,6 +7,7 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 import Footer from "@components/footer";
+import Header from "@components/header";
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
@@ -22,6 +23,8 @@ export default function MyApp({ Component, pageProps }: AppProps) {
     };
   }, [router.events]);
 
+  if (typeof location == "undefined") return null;
+
   return (
     <>
       <Head>
@@ -29,6 +32,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <ChakraProvider theme={theme}>
+        <Header />
         <Component {...pageProps} />
         <Footer />
       </ChakraProvider>

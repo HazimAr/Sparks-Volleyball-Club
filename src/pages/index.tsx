@@ -1,5 +1,10 @@
-import { Box } from "@chakra-ui/react";
+import Hero from "@components/home/hero";
 
 export default function Index() {
-  return <Box h="500px" />;
+
+  return (
+    <>
+      <Hero />
+    </>
+  );
 }

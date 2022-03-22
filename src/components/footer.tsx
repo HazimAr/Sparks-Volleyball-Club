@@ -6,6 +6,7 @@ import {
   Flex,
   Heading,
   HStack,
+  Image,
   Link,
   Stack,
   Text,
@@ -46,10 +47,10 @@ export default function Footer() {
               fontSize={{ base: "xl", sm: "3xl", lg: "4xl" }}
               as="h1"
             >
-              Upgrade your skills today!
+              Upgrade ☝️ your skills today!
             </Heading>
             <Text fontSize={{ base: "sm", sm: "lg" }}>
-              Build up your volleyball knowledge.
+              👉 Build up your volleyball knowledge.
             </Text>
             <HStack>
               <NextChakraLink href="/register">
@@ -59,21 +60,21 @@ export default function Footer() {
           </VStack>
         </Center>
         <Flex justify="space-between">
-          <Stack>
+          <VStack>
             {/* <NextImage
               src="/logo.png"
               layout="responsive"
               width="50px"
               height="50px"
             /> */}
-            <Center h="100px">LOGO GOES HERE</Center>
+            <Image src="/logo.png" />
             <HStack gap={5} justify="center">
               <FooterIcon icon={<FaInstagram />} href="/instagram" />
               <FooterIcon icon={<FaTiktok />} href="/tiktok" />
               <FooterIcon icon={<FaFacebook />} href="/facebook" />
               <FooterIcon icon={<FaYoutube />} href="/youtube" />
             </HStack>
-          </Stack>
+          </VStack>
           <Stack>
             <Heading size="sm" color="white">
               Quick Links
