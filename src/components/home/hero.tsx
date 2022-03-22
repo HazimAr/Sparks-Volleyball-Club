@@ -1,6 +1,6 @@
 import Container from "../container";
 import ContainerInside from "../containerInside";
-import { Center, Heading, Link, Button } from "@chakra-ui/react";
+import { Center, Heading } from "@chakra-ui/react";
 
 export default function Hero() {
   return (
