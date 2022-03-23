@@ -3,7 +3,6 @@ import {
   Image,
   SimpleGrid,
   Stack,
-  // Text,
   VStack,
 } from "@chakra-ui/react";
 import NextChakraLink from "@components/nextChakraLink";
@@ -67,7 +66,6 @@ function StaffCard({ name, title, img}) {
         <Stack>
           <Heading size="md">{name}</Heading>
           <Heading size="sm">{title}</Heading>
-          {/* <Text>{bio}</Text> */}
         </Stack>
       </Stack>
     </NextChakraLink>
