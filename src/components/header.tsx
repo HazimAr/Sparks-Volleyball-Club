@@ -24,8 +24,9 @@ export default function Header() {
       position={location.pathname == "/" ? "fixed" : "sticky"}
       top={0}
       w={location.pathname == "/" ? "100vw" : "auto"}
-      transition="all 0.5s ease-in-out"
+      transition="all 0.3s ease"
       background={background ? "white" : "transparent"}
+      shadow={background ? "md" : null}
       zIndex={100}
       // color={background ? "black" :  "white"}
       fontSize={22}
