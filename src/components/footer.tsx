@@ -57,13 +57,8 @@ export default function Footer() {
         </Center>
         <Flex justify="space-between">
           <VStack>
-            {/* <NextImage
-              src="/logo.png"
-              layout="responsive"
-              width="50px"
-              height="50px"
-            /> */}
-            <Image src="/logo.png" alt="sparks volleyball club's logo"/>
+
+            <Image src="/logo.png" alt="sparks volleyball club's logo" w="200px" mb={10}/>
             <HStack gap={5} justify="center">
               <FooterIcon icon={<FaInstagram />} href="/instagram" />
               <FooterIcon icon={<FaTiktok />} href="/tiktok" />

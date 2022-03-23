@@ -31,6 +31,10 @@ const theme = extendTheme({
         color: "primary",
         fontWeight: "bold",
       },
+      ".white-header": {
+        color: "#fff",
+        textShadow: "#000 0px 0px 3px",
+      },
       "&::-webkit-scrollbar": {
         width: "0.6em",
       },

@@ -1,4 +1,4 @@
-import { Flex, Image } from "@chakra-ui/react";
+import { Flex, Heading, Image } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import Container from "./container";
 import ContainerInside from "./containerInside";
@@ -23,15 +23,23 @@ export default function Header() {
     <Container
       position={location.pathname == "/" ? "fixed" : "sticky"}
       top={0}
-      h={100}
       w={location.pathname == "/" ? "100vw" : "auto"}
       transition="all 0.5s ease-in-out"
       background={background ? "white" : "transparent"}
       zIndex={100}
+      // color={background ? "black" :  "white"}
+      fontSize={22}
     >
-      <ContainerInside>
+      <ContainerInside py={2}>
         <Flex align="center" justify="space-between">
-          <Image src="/logo.png" alt="sparks volleyball club's logo" />
+          <Flex align="center" gap={5}>
+            <Image
+              src="/logo.png"
+              alt="sparks volleyball club's logo"
+              w="75px"
+            />
+            <Heading size="md">Sparks Volleyball Club</Heading>
+          </Flex>
           <Flex gap={10}>
             <NextChakraLink href="/">Home</NextChakraLink>
             <NextChakraLink href="/register">Register</NextChakraLink>
