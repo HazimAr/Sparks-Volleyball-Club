@@ -30,10 +30,13 @@ const theme = extendTheme({
       span: {
         color: "primary",
         fontWeight: "bold",
+        background: "gradient",
+        backgroundClip: "text",
       },
       ".white-header": {
         color: "#fff",
         textShadow: "#000 0px 0px 3px",
+        background: "transparent",
       },
       "&::-webkit-scrollbar": {
         width: "0.6em",
