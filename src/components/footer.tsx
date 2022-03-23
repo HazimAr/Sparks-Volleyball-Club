@@ -57,8 +57,14 @@ export default function Footer() {
         </Center>
         <Flex justify="space-between">
           <VStack>
-
-            <Image src="/logo.png" alt="sparks volleyball club's logo" w="200px" mb={10}/>
+            <NextChakraLink href="/">
+              <Image
+                src="/logo.png"
+                alt="sparks volleyball club's logo"
+                w="200px"
+                mb={10}
+              />
+            </NextChakraLink>
             <HStack gap={5} justify="center">
               <FooterIcon icon={<FaInstagram />} href="/instagram" />
               <FooterIcon icon={<FaTiktok />} href="/tiktok" />
@@ -70,10 +76,12 @@ export default function Footer() {
             <Heading size="sm" color="white">
               Quick Links
             </Heading>
-            <NextChakraLink href="/home">Home</NextChakraLink>
+            <NextChakraLink href="/">Home</NextChakraLink>
             <NextChakraLink href="/register">Register</NextChakraLink>
-            <NextChakraLink href="/about">About</NextChakraLink>
             <NextChakraLink href="/staff">Staff</NextChakraLink>
+            <NextChakraLink href="/story">Our Story</NextChakraLink>
+            <NextChakraLink href="/sponsors">Sponsors</NextChakraLink>
+            <NextChakraLink href="/contact">Contact</NextChakraLink>
           </Stack>
           <Stack>
             <Heading size="sm" color="white">
