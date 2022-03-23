@@ -4,32 +4,43 @@ import {
   Image,
   Link,
   SimpleGrid,
-  // Text,
+  Text,
   VStack,
 } from "@chakra-ui/react";
 import { Client } from "@notionhq/client";
 import { QueryDatabaseResponse } from "@notionhq/client/build/src/api-endpoints";
 
 export default function Register({ forms }: { forms: QueryDatabaseResponse }) {
-  console.log(forms);
   return (
     <VStack>
       <Heading as="h1">Register</Heading>
       <SimpleGrid columns={3} gap={10}>
         {forms.results.length &&
-          forms.results.map((form) => (
-            <Form
-              key={form.id}
+          forms.results.map(
+            (form) =>
               // @ts-ignore
-              name={form.properties.Name.title[0].plain_text}
+              form.properties.Name.title[0]?.plain_text &&
               // @ts-ignore
-              form={form.properties.Form.url}
+              form.properties.Form?.url &&
               // @ts-ignore
-              description={form.properties.Description.rich_text[0].plain_text}
+              form.properties.Description.rich_text[0]?.plain_text &&
               // @ts-ignore
-              img={form.properties.Image.files[0].file.url}
-            />
-          ))}
+              form.properties.Image.files[0]?.file?.url && (
+                <Form
+                  key={form.id}
+                  // @ts-ignore
+                  name={form.properties.Name.title[0]?.plain_text}
+                  // @ts-ignore
+                  form={form.properties.Form?.url}
+                  description={
+                    // @ts-ignore
+                    form.properties.Description.rich_text[0]?.plain_text
+                  }
+                  // @ts-ignore
+                  img={form.properties.Image.files[0]?.file?.url}
+                />
+              )
+          )}
       </SimpleGrid>
     </VStack>
   );
@@ -50,7 +61,6 @@ export async function getServerSideProps() {
 }
 
 function Form({ name, form, img, description }) {
-  console.log(description);
   return (
     <Link href={form} isExternal>
       <VStack
@@ -59,8 +69,9 @@ function Form({ name, form, img, description }) {
         _hover={{ transform: "scale(1.05)" }}
       >
         <Image src={img} borderRadius="3xl" alt={`${name} banner`} />
-        <VStack>
+        <VStack textAlign="center">
           <Heading size="md">{name}</Heading>
+          <Text>{description}</Text>
           <Button>Register</Button>
         </VStack>
       </VStack>
