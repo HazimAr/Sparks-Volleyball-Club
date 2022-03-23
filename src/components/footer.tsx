@@ -41,12 +41,8 @@ export default function Footer() {
           textAlign="center"
           boxShadow={`0px 0px 100px ${primary}`}
         >
-          <VStack maxW="500px" px="25px">
-            <Heading
-              color="white"
-              fontSize={{ base: "xl", sm: "3xl", lg: "4xl" }}
-              as="h1"
-            >
+          <VStack maxW="500px" px="25px" color="white">
+            <Heading fontSize={{ base: "xl", sm: "3xl", lg: "4xl" }} as="h1">
               Upgrade ☝️ your skills today!
             </Heading>
             <Text fontSize={{ base: "sm", sm: "lg" }}>

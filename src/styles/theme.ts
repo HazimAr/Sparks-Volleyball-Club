@@ -3,11 +3,11 @@ import { Button, Link } from "./components";
 
 const theme = extendTheme({
   colors: {
-    primary: "#D42B2B",
+    primary: "hsla(0, 60%, 50%, 1)",
     secondary: "white",
     accent: "#1f1f1f",
     gradient:
-      "linear-gradient(90deg, hsla(0, 66%, 50%, 1) 0%, hsla(0, 100%, 50%, 1) 100%); hsla(0, 66%, 50%, 1);",
+      "linear-gradient(90deg, hsla(0, 60%, 50%, 1) 0%, hsla(0, 100%, 25%, 1) 100%); hsla(0, 66%, 50%, 1);",
   },
   components: {
     Button,

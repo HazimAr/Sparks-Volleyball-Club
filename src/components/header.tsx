@@ -1,11 +1,23 @@
-import { Flex, Image, Link } from "@chakra-ui/react";
-import { useState } from "react";
+import { Flex, Image } from "@chakra-ui/react";
+import { useEffect, useState } from "react";
 import Container from "./container";
 import ContainerInside from "./containerInside";
+import NextChakraLink from "./nextChakraLink";
 
 export default function Header() {
   const [background, setBackground] = useState(false);
   console.log(location.pathname);
+
+  useEffect(() => {
+    onscroll = () => {
+      if (window.scrollY > 50) {
+        setBackground(true);
+        return;
+      }
+
+      setBackground(false);
+    };
+  }, []);
 
   return (
     <Container
@@ -13,22 +25,20 @@ export default function Header() {
       top={0}
       h={100}
       w={location.pathname == "/" ? "100vw" : "auto"}
+      transition="all 0.5s ease-in-out"
       background={background ? "white" : "transparent"}
-      onScroll={() =>
-        window.scrollY == 0 ? setBackground(false) : setBackground(true)
-      }
       zIndex={100}
     >
       <ContainerInside>
         <Flex align="center" justify="space-between">
           <Image src="/logo.png" />
           <Flex gap={10}>
-            <Link href="/">Home</Link>
-            <Link href="/register">Register</Link>
-            <Link href="/staff">Staff</Link>
-            <Link href="/story">Our Story</Link>
-            <Link href="/sponsors">Sponsors</Link>
-            <Link href="/contact">Contact</Link>
+            <NextChakraLink href="/">Home</NextChakraLink>
+            <NextChakraLink href="/register">Register</NextChakraLink>
+            <NextChakraLink href="/staff">Staff</NextChakraLink>
+            <NextChakraLink href="/story">Our Story</NextChakraLink>
+            <NextChakraLink href="/sponsors">Sponsors</NextChakraLink>
+            <NextChakraLink href="/contact">Contact</NextChakraLink>
           </Flex>
         </Flex>
       </ContainerInside>

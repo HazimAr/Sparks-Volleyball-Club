@@ -24,13 +24,13 @@ export default function Staff({
             <StaffCard
               key={member.id}
               // @ts-ignore
-              name={member.properties.Name.title[0].plain_text}
+              name={member.properties.Name.title[0]?.plain_text}
               // @ts-ignore
-              title={member.properties.Title.rich_text[0].plain_text}
+              title={member.properties.Title.rich_text[0]?.plain_text}
               // @ts-ignore
-              bio={member.properties.Bio.rich_text[0].plain_text}
+              bio={member.properties.Bio.rich_text[0]?.plain_text}
               // @ts-ignore
-              img={member.properties.Image.files[0].file.url}
+              img={member.properties.Image.files[0]?.file?.url}
             />
           ))}
       </SimpleGrid>
@@ -59,7 +59,7 @@ function StaffCard({ name, title, img /* bio */ }) {
       transition="all ease .3s"
       // _hover={{ transform: "scale(1.1)", cursor: "pointer" }}
     >
-      <Image src={img} borderRadius="3xl" />
+      <Image src={img ?? "/default.png"} borderRadius="3xl" />
       <Stack>
         <Heading size="md">{name}</Heading>
         <Heading size="sm">{title}</Heading>
