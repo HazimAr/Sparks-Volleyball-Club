@@ -13,7 +13,7 @@ export default function Hero() {
             <span> Champion</span> Athletes 🏆
           </Heading>
           <Center w="100%">
-            <Image src="/hero.png" w="500px" transform="scaleX(1)" />
+            <Image src="/hero.png" w="500px" />
           </Center>
         </Flex>
       </ContainerInside>
