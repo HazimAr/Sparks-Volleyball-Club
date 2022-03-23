@@ -6,6 +6,7 @@ import {
   // Text,
   VStack,
 } from "@chakra-ui/react";
+import NextChakraLink from "@components/nextChakraLink";
 import { Client } from "@notionhq/client";
 import { QueryDatabaseResponse } from "@notionhq/client/build/src/api-endpoints";
 
@@ -27,8 +28,6 @@ export default function Staff({
               name={member.properties.Name.title[0]?.plain_text}
               // @ts-ignore
               title={member.properties.Title.rich_text[0]?.plain_text}
-              // @ts-ignore
-              bio={member.properties.Bio.rich_text[0]?.plain_text}
               // @ts-ignore
               img={member.properties.Image.files[0]?.file?.url}
             />
@@ -52,19 +51,25 @@ export async function getServerSideProps() {
   };
 }
 
-function StaffCard({ name, title, img /* bio */ }) {
+function StaffCard({ name, title, img}) {
   return (
-    <Stack
-      w="200px"
-      transition="all ease .3s"
-      // _hover={{ transform: "scale(1.1)", cursor: "pointer" }}
-    >
-      <Image src={img ?? "/default.png"} borderRadius="3xl" alt={`${name}'s face`} />
-      <Stack>
-        <Heading size="md">{name}</Heading>
-        <Heading size="sm">{title}</Heading>
-        {/* <Text>{bio}</Text> */}
+    <NextChakraLink href={`/staff/${name.split(" ").join("_")}`}>
+      <Stack
+        w="200px"
+        transition="all ease .3s"
+        _hover={{ transform: "scale(1.05)" }}
+      >
+        <Image
+          src={img ?? "/default.png"}
+          borderRadius="3xl"
+          alt={`${name}'s face`}
+        />
+        <Stack>
+          <Heading size="md">{name}</Heading>
+          <Heading size="sm">{title}</Heading>
+          {/* <Text>{bio}</Text> */}
+        </Stack>
       </Stack>
-    </Stack>
+    </NextChakraLink>
   );
 }
