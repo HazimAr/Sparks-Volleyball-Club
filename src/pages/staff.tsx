@@ -1,10 +1,4 @@
-import {
-  Heading,
-  Image,
-  SimpleGrid,
-  Stack,
-  VStack,
-} from "@chakra-ui/react";
+import { Heading, Image, SimpleGrid, Stack, VStack } from "@chakra-ui/react";
 import NextChakraLink from "@components/nextChakraLink";
 import { Client } from "@notionhq/client";
 import { QueryDatabaseResponse } from "@notionhq/client/build/src/api-endpoints";
@@ -41,16 +35,20 @@ export async function getServerSideProps() {
     auth: process.env.NOTION,
   });
 
-  const staffMembers = await notion.databases.query({
+  let staffMembers = await notion.databases.query({
     database_id: "199a36871ce14867a02c7f43182b5051",
   });
+  staffMembers.results = staffMembers.results.sort((a, b) =>
+    // @ts-ignore
+    a.properties.Order.number < b.properties.Order.number ? -1 : 1
+  );
 
   return {
     props: { staffMembers },
   };
 }
 
-function StaffCard({ name, title, img}) {
+function StaffCard({ name, title, img }) {
   return (
     <NextChakraLink href={`/staff/${name.split(" ").join("_")}`}>
       <Stack

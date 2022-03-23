@@ -51,9 +51,14 @@ export async function getServerSideProps() {
     auth: process.env.NOTION,
   });
 
-  const forms = await notion.databases.query({
+  let forms = await notion.databases.query({
     database_id: "309e8f22df49471ea80d8b9af61fdc75",
   });
+
+  forms.results = forms.results.sort((a, b) =>
+    // @ts-ignore
+    a.properties.Order.number < b.properties.Order.number ? -1 : 1
+  );
 
   return {
     props: { forms },
