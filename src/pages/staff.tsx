@@ -59,7 +59,7 @@ function StaffCard({ name, title, img /* bio */ }) {
       transition="all ease .3s"
       // _hover={{ transform: "scale(1.1)", cursor: "pointer" }}
     >
-      <Image src={img ?? "/default.png"} borderRadius="3xl" />
+      <Image src={img ?? "/default.png"} borderRadius="3xl" alt={`${name}'s face`} />
       <Stack>
         <Heading size="md">{name}</Heading>
         <Heading size="sm">{title}</Heading>

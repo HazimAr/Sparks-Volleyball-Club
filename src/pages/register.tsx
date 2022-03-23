@@ -58,7 +58,7 @@ function Form({ name, form, img, description }) {
         transition="all ease .3s"
         _hover={{ transform: "scale(1.05)" }}
       >
-        <Image src={img} borderRadius="3xl" />
+        <Image src={img} borderRadius="3xl" alt={`${name} banner`} />
         <VStack>
           <Heading size="md">{name}</Heading>
           <Button>Register</Button>

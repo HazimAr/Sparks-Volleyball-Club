@@ -29,6 +29,7 @@ const theme = extendTheme({
       },
       span: {
         color: "primary",
+        fontWeight: "bold",
       },
       "&::-webkit-scrollbar": {
         width: "0.6em",

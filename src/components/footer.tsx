@@ -63,7 +63,7 @@ export default function Footer() {
               width="50px"
               height="50px"
             /> */}
-            <Image src="/logo.png" />
+            <Image src="/logo.png" alt="sparks volleyball club's logo"/>
             <HStack gap={5} justify="center">
               <FooterIcon icon={<FaInstagram />} href="/instagram" />
               <FooterIcon icon={<FaTiktok />} href="/tiktok" />

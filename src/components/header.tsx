@@ -31,7 +31,7 @@ export default function Header() {
     >
       <ContainerInside>
         <Flex align="center" justify="space-between">
-          <Image src="/logo.png" />
+          <Image src="/logo.png" alt="sparks volleyball club's logo" />
           <Flex gap={10}>
             <NextChakraLink href="/">Home</NextChakraLink>
             <NextChakraLink href="/register">Register</NextChakraLink>
