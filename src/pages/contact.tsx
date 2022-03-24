@@ -58,7 +58,7 @@ export default function Contact({
             {questions.results.map((question) => (
               <AccordionItem key={question.id}>
                 <AccordionButton>
-                  <Heading flex="1" textAlign="left">
+                  <Heading size="md" flex="1" textAlign="left">
                     {/* @ts-ignore */}
                     {question.properties.Name.title[0]?.plain_text}
                   </Heading>
