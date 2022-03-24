@@ -35,22 +35,30 @@ export default function Header() {
         <Flex align="center" justify="space-between">
           <Flex align="center" gap={5}>
             <Image
-              src="/logo.png"
+              src="/logos/transparent.png"
               alt="sparks volleyball club's logo"
               w="75px"
             />
             <Heading size="md">Sparks Volleyball Club</Heading>
           </Flex>
           <Flex gap={10}>
-            <NextChakraLink href="/">Home</NextChakraLink>
-            <NextChakraLink href="/register">Register</NextChakraLink>
-            <NextChakraLink href="/staff">Staff</NextChakraLink>
-            <NextChakraLink href="/story">Our Story</NextChakraLink>
-            <NextChakraLink href="/sponsors">Sponsors</NextChakraLink>
-            <NextChakraLink href="/contact">Contact</NextChakraLink>
+            <HeaderLink href="/">Home</HeaderLink>
+            <HeaderLink href="/register">Register</HeaderLink>
+            <HeaderLink href="/staff">Staff</HeaderLink>
+            <HeaderLink href="/story">Our Story</HeaderLink>
+            <HeaderLink href="/sponsors">Sponsors</HeaderLink>
+            <HeaderLink href="/contact">Contact</HeaderLink>
           </Flex>
         </Flex>
       </ContainerInside>
     </Container>
+  );
+}
+
+function HeaderLink({ children, href, ...props }) {
+  return (
+    <NextChakraLink _hover={{ color: "primary" }} href={href} {...props}>
+      {children}
+    </NextChakraLink>
   );
 }

@@ -151,7 +151,7 @@ function FooterIcon({ icon, href }) {
     <Link href={href} isExternal>
       <Circle
         transition="all ease .3s"
-        _hover={{ background: "transparent" }}
+        _hover={{ background: "white", color: "primary" }}
         fontSize="2xl"
         p={3}
         bg="primary"
