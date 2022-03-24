@@ -53,7 +53,7 @@ function StaffCard({ name, title, img }) {
     <NextChakraLink href={`/staff/${name.split(" ").join("_")}`}>
       <Stack
         w="200px"
-        transition="all ease .3s"
+        transition="all ease .2s"
         _hover={{ transform: "scale(1.05)" }}
       >
         <Image

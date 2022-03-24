@@ -45,7 +45,7 @@ export const Link: ComponentStyleConfig = {
   baseStyle: {
     _active: { boxShadow: "none" },
     _focus: { boxShadow: "none" },
-    _hover: { textDecoration: "none" },
+    _hover: { textDecoration: "none", color: "primary" },
   },
   sizes: {},
   variants: {},

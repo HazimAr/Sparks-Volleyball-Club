@@ -10,7 +10,7 @@ export default function Header() {
 
   useEffect(() => {
     onscroll = () => {
-      if (window.scrollY > 50) {
+      if (window.scrollY > 30) {
         setBackground(true);
         return;
       }
@@ -46,7 +46,7 @@ export default function Header() {
             <HeaderLink href="/register">Register</HeaderLink>
             <HeaderLink href="/staff">Staff</HeaderLink>
             <HeaderLink href="/story">Our Story</HeaderLink>
-            <HeaderLink href="/sponsors">Sponsors</HeaderLink>
+            {/* <HeaderLink href="/sponsors">Sponsors</HeaderLink> */}
             <HeaderLink href="/contact">Contact</HeaderLink>
           </Flex>
         </Flex>
@@ -57,7 +57,7 @@ export default function Header() {
 
 function HeaderLink({ children, href, ...props }) {
   return (
-    <NextChakraLink _hover={{ color: "primary" }} href={href} {...props}>
+    <NextChakraLink href={href} {...props}>
       {children}
     </NextChakraLink>
   );

@@ -70,7 +70,7 @@ function Form({ name, form, img, description }) {
     <Link href={form} isExternal>
       <VStack
         w="200px"
-        transition="all ease .3s"
+        transition="all ease .2s"
         _hover={{ transform: "scale(1.05)" }}
       >
         <Image src={img} borderRadius="3xl" alt={`${name} banner`} />
