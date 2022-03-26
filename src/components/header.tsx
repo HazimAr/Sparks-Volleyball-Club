@@ -33,19 +33,21 @@ export default function Header() {
     >
       <ContainerInside py={2}>
         <Flex align="center" justify="space-between">
-          <Flex align="center" gap={5}>
-            <Image
-              src="/logos/transparent.png"
-              alt="sparks volleyball club's logo"
-              w="75px"
-            />
-            <Heading size="md">Sparks Volleyball Club</Heading>
-          </Flex>
+          <NextChakraLink href="/">
+            <Flex align="center" gap={5}>
+              <Image
+                src="/logos/transparent.png"
+                alt="sparks volleyball club's logo"
+                w="75px"
+              />
+              <Heading size="md">Sparks Volleyball Club</Heading>
+            </Flex>
+          </NextChakraLink>
           <Flex gap={10}>
             <HeaderLink href="/">Home</HeaderLink>
             <HeaderLink href="/register">Register</HeaderLink>
             <HeaderLink href="/staff">Staff</HeaderLink>
-            <HeaderLink href="/story">Our Story</HeaderLink>
+            {/* <HeaderLink href="/story">Our Story</HeaderLink> */}
             {/* <HeaderLink href="/sponsors">Sponsors</HeaderLink> */}
             <HeaderLink href="/contact">Contact</HeaderLink>
           </Flex>

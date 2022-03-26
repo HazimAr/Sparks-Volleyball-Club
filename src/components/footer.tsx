@@ -79,7 +79,7 @@ export default function Footer() {
             <NextChakraLink href="/">Home</NextChakraLink>
             <NextChakraLink href="/register">Register</NextChakraLink>
             <NextChakraLink href="/staff">Staff</NextChakraLink>
-            <NextChakraLink href="/story">Our Story</NextChakraLink>
+            {/* <NextChakraLink href="/story">Our Story</NextChakraLink> */}
             {/* <NextChakraLink href="/sponsors">Sponsors</NextChakraLink> */}
             <NextChakraLink href="/contact">Contact</NextChakraLink>
           </Stack>

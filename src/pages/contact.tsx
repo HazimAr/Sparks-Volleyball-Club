@@ -27,7 +27,7 @@ export default function Contact({
     <Container>
       <ContainerInside>
         <Stack spacing={10}>
-          <Text>Add Interactive Map Here</Text>
+          {/* <Text>Add Interactive Map Here</Text> */}
           <Heading as="h1" textAlign="center">
             Contact Us
           </Heading>
@@ -54,7 +54,7 @@ export default function Contact({
           <Heading as="h1" textAlign="center">
             FAQ
           </Heading>
-          <Accordion allowToggle>
+          <Accordion allowToggle id="faq">
             {questions.results.map((question) => (
               <AccordionItem key={question.id}>
                 <AccordionButton>
