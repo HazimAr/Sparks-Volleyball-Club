@@ -1,8 +1,9 @@
-import { Flex, Heading, Image } from "@chakra-ui/react";
+import { Flex, Heading } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import Container from "./container";
 import ContainerInside from "./containerInside";
 import NextChakraLink from "./nextChakraLink";
+import Image from "next/image";
 
 export default function Header() {
   const [background, setBackground] = useState(false);
@@ -34,11 +35,12 @@ export default function Header() {
       <ContainerInside py={2}>
         <Flex align="center" justify="space-between">
           <NextChakraLink href="/">
-            <Flex align="center" gap={5}>
+            <Flex gap={5} align="center" justify="center">
               <Image
                 src="/logos/transparent.png"
                 alt="sparks volleyball club's logo"
-                w="75px"
+                width="75px"
+                height="75px"
               />
               <Heading size="md">Sparks Volleyball Club</Heading>
             </Flex>

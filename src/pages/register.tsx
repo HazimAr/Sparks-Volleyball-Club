@@ -7,42 +7,48 @@ import {
   Text,
   VStack,
 } from "@chakra-ui/react";
+import Container from "@components/container";
+import ContainerInside from "@components/containerInside";
 import { Client } from "@notionhq/client";
 import { QueryDatabaseResponse } from "@notionhq/client/build/src/api-endpoints";
 
 export default function Register({ forms }: { forms: QueryDatabaseResponse }) {
   return (
-    <VStack>
-      <Heading as="h1">Register</Heading>
-      <SimpleGrid columns={3} gap={10}>
-        {forms.results.length &&
-          forms.results.map(
-            (form) =>
-              // @ts-ignore
-              form.properties.Name.title[0]?.plain_text &&
-              // @ts-ignore
-              form.properties.Form?.url &&
-              // @ts-ignore
-              form.properties.Description.rich_text[0]?.plain_text &&
-              // @ts-ignore
-              form.properties.Image.files[0]?.file?.url && (
-                <Form
-                  key={form.id}
+    <Container>
+      <ContainerInside>
+        <VStack>
+          <Heading as="h1">Register</Heading>
+          <SimpleGrid columns={3} gap={10}>
+            {forms.results.length &&
+              forms.results.map(
+                (form) =>
                   // @ts-ignore
-                  name={form.properties.Name.title[0]?.plain_text}
+                  form.properties.Name.title[0]?.plain_text &&
                   // @ts-ignore
-                  form={form.properties.Form?.url}
-                  description={
-                    // @ts-ignore
-                    form.properties.Description.rich_text[0]?.plain_text
-                  }
+                  form.properties.Form?.url &&
                   // @ts-ignore
-                  img={form.properties.Image.files[0]?.file?.url}
-                />
-              )
-          )}
-      </SimpleGrid>
-    </VStack>
+                  form.properties.Description.rich_text[0]?.plain_text &&
+                  // @ts-ignore
+                  form.properties.Image.files[0]?.file?.url && (
+                    <Form
+                      key={form.id}
+                      // @ts-ignore
+                      name={form.properties.Name.title[0]?.plain_text}
+                      // @ts-ignore
+                      form={form.properties.Form?.url}
+                      description={
+                        // @ts-ignore
+                        form.properties.Description.rich_text[0]?.plain_text
+                      }
+                      // @ts-ignore
+                      img={form.properties.Image.files[0]?.file?.url}
+                    />
+                  )
+              )}
+          </SimpleGrid>
+        </VStack>
+      </ContainerInside>
+    </Container>
   );
 }
 

@@ -1,18 +1,12 @@
 import Container from "../container";
 import ContainerInside from "../containerInside";
-import {
-  Button,
-  Center,
-  Flex,
-  Heading,
-  Image,
-  VStack,
-  Text,
-} from "@chakra-ui/react";
+import { Button, Center, Flex, Heading, VStack, Text } from "@chakra-ui/react";
+
+import Image from "next/image";
 
 export default function Hero() {
   return (
-    <Container h="100vh" w="100%">
+    <Container h="100vh" >
       <ContainerInside>
         <Flex align="center">
           <VStack>
@@ -27,7 +21,11 @@ export default function Hero() {
             <Button>Register Now</Button>
           </VStack>
           <Center w="100%">
-            <Image src="/cutouts/set.png" w="500px" />
+            <Image
+              src="/cutouts/set.png"
+              width="500px"
+              height="500px"
+            />
           </Center>
         </Flex>
       </ContainerInside>
