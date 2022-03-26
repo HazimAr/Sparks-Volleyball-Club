@@ -27,7 +27,7 @@ export default function Hero() {
             <Button>Register Now</Button>
           </VStack>
           <Center w="100%">
-            <Image src="/hero.png" w="500px" />
+            <Image src="/cutouts/set.png" w="500px" />
           </Center>
         </Flex>
       </ContainerInside>
