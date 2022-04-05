@@ -5,8 +5,6 @@ import { Client } from "@notionhq/client";
 import { GetServerSidePropsContext } from "next";
 
 export default function StaffMember({ staffMember }) {
-  console.log(staffMember);
-
   return (
     <Container>
       <ContainerInside>

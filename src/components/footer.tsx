@@ -87,14 +87,14 @@ export default function Footer() {
             <Heading size="sm" color="white">
               Follow
             </Heading>
-            <NextChakraLink href="https://www.instagram.com/sparks_vbc_lv/">
+            <NextChakraLink href="/instagram">
               Instagram
             </NextChakraLink>
             <NextChakraLink href="/tiktok">Tiktok</NextChakraLink>
-            <NextChakraLink href="https://www.facebook.com/SparksVBCLV">
+            <NextChakraLink href="/facebook">
               Facebook
             </NextChakraLink>
-            <NextChakraLink href="https://www.youtube.com/channel/UCrUowRgcYRZif4HXd9RgO4A">
+            <NextChakraLink href="/youtube">
               Youtube
             </NextChakraLink>
           </Stack>
