@@ -30,7 +30,7 @@ export default function Staff({
   );
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const notion = new Client({
     auth: process.env.NOTION,
   });
@@ -45,6 +45,7 @@ export async function getServerSideProps() {
 
   return {
     props: { staffMembers },
+    revalidate: 300,
   };
 }
 

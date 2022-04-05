@@ -24,18 +24,17 @@ export default function StaffMember({ staffMember }) {
           <Heading size="md" textAlign="center">
             {staffMember.properties.Title.rich_text[0]?.plain_text}
           </Heading>
-          <Text>{staffMember.properties.Bio.rich_text[0]?.plain_text ?? "No Biography Provided"}</Text>
+          <Text>
+            {staffMember.properties.Bio.rich_text[0]?.plain_text ??
+              "No Biography Provided"}
+          </Text>
         </VStack>
       </ContainerInside>
     </Container>
   );
 }
 
-export async function getServerSideProps(ctx: GetServerSidePropsContext) {
-  const notion = new Client({
-    auth: process.env.NOTION,
-  });
-
+export async function getStaticProps(ctx: GetServerSidePropsContext) {
   const staffMember = (
     await notion.databases.query({
       database_id: "199a36871ce14867a02c7f43182b5051",
@@ -50,5 +49,27 @@ export async function getServerSideProps(ctx: GetServerSidePropsContext) {
 
   return {
     props: { staffMember },
+    revalidate: 300,
   };
 }
+
+export async function getStaticPaths() {
+  const staff = await notion.databases.query({
+    database_id: "199a36871ce14867a02c7f43182b5051",
+  });
+  return {
+    paths: staff.results.map((staffMember) => ({
+      params: {
+        // @ts-ignore
+        staffName: staffMember.properties.Name.title[0]?.plain_text
+          .split(" ")
+          .join("_"),
+      },
+    })),
+    fallback: false, // false or 'blocking'
+  };
+}
+
+const notion = new Client({
+  auth: process.env.NOTION,
+});

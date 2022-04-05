@@ -52,7 +52,7 @@ export default function Register({ forms }: { forms: QueryDatabaseResponse }) {
   );
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const notion = new Client({
     auth: process.env.NOTION,
   });
@@ -68,6 +68,7 @@ export async function getServerSideProps() {
 
   return {
     props: { forms },
+    revalidate: 300,
   };
 }
 
