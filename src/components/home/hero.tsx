@@ -22,7 +22,7 @@ export default function Hero() {
           </VStack>
           <Center w="100%">
             <Image
-              src="/cutouts/set.png"
+              src="/cutouts/4.png"
               width="500px"
               height="500px"
             />
