@@ -87,16 +87,16 @@ export default function Footer() {
             <Heading size="sm" color="white">
               Follow
             </Heading>
-            <NextChakraLink href="/instagram">
+            <Link isExternal href="/instagram">
               Instagram
-            </NextChakraLink>
-            <NextChakraLink href="/tiktok">Tiktok</NextChakraLink>
-            <NextChakraLink href="/facebook">
+            </Link>
+            <Link isExternal href="/tiktok">Tiktok</Link>
+            <Link isExternal href="/facebook">
               Facebook
-            </NextChakraLink>
-            <NextChakraLink href="/youtube">
+            </Link>
+            <Link isExternal href="/youtube">
               Youtube
-            </NextChakraLink>
+            </Link>
           </Stack>
           <Stack>
             <Heading size="sm" color="white">
