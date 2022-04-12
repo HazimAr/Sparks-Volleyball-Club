@@ -1,10 +1,10 @@
-import Hero from "@components/home/hero";
+import { Hero, Register } from "@components/home";
 
 export default function Index() {
-
   return (
     <>
       <Hero />
+      <Register />
     </>
   );
 }

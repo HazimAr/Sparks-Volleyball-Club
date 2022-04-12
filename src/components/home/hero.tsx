@@ -1,31 +1,34 @@
 import Container from "../container";
-import ContainerInside from "../containerInside";
-import { Button, Center, Flex, Heading, VStack, Text } from "@chakra-ui/react";
 
-import Image from "next/image";
+import { Heading } from "@chakra-ui/react";
 
-export default function Hero() {
+export default function () {
   return (
-    <Container h="100vh">
-      <ContainerInside>
-        <Flex align="center">
-          <VStack>
-            <Heading as="h1" w="100%" fontSize={50} textAlign="center">
-              We <span>Train</span> <span className="white-header">and</span>{" "}
-              <span className="white-header">Mold</span>
-              <span> Champion</span> Athletes
-            </Heading>
-            <Text fontSize={25}>
-              Take your volleyball skills to the next level.
-            </Text>
-            <Button>Register Now</Button>
-          </VStack>
-          <Center w="100%">
-            <Image src="/cutouts/3.png" width="500px" height="500px" />
-          </Center>
-        </Flex>
-      </ContainerInside>
-      {/* <Link position="absolute" onScroll={() => {}}></Link> */}
+    <Container
+      h="100vh"
+      backgroundImage="hero.png"
+      backgroundRepeat="no-repeat"
+      backgroundSize="cover"
+      backgroundPosition="center"
+    >
+      <Container
+        w="100%"
+        h="100%"
+        fontSize="10vw"
+        background="rgba(255,255,255,0.9)"
+        color="black"
+        mixBlendMode="screen"
+        textTransform="uppercase"
+        textAlign="center"
+      >
+        <Heading as="h1" fontSize="inherit">
+          Train
+          <br />
+          Champion
+          <br />
+          Athletes
+        </Heading>
+      </Container>
     </Container>
   );
 }
