@@ -56,6 +56,7 @@ function StaffCard({ name, title, img }) {
         w="200px"
         transition="all ease .2s"
         _hover={{ transform: "scale(1.05)" }}
+        
       >
         <Image
           src={img ?? "/default.png"}
