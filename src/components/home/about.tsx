@@ -9,13 +9,16 @@ import {
 } from "@chakra-ui/react";
 import Container from "@components/container";
 import ContainerInside from "@components/containerInside";
+import NextChakraLink from "@components/nextChakraLink";
 
 export default function () {
   return (
     <Container>
       <ContainerInside>
         <VStack>
-          <Heading as="h1">About Us</Heading>
+          <Heading as="h1" fontSize="7xl">
+            About Us
+          </Heading>
           <HStack spacing={0}>
             <VStack w="100%">
               <Heading>Who?</Heading>
@@ -32,7 +35,7 @@ export default function () {
           </HStack>
           <HStack spacing={0}>
             <Center w="100%">
-              <Image src="/cutouts/2.png" h="300px" />
+              <Image src="/cutouts/3.png" h="300px" />
             </Center>
             <VStack w="100%">
               <Heading>What?</Heading>
@@ -55,10 +58,12 @@ export default function () {
               </Text>
             </VStack>
             <Center w="100%">
-              <Image src="/cutouts/2.png" h="300px" />
+              <Image src="/cutouts/4.png" h="300px" />
             </Center>
           </HStack>
-          <Button>Register Now</Button>
+          <NextChakraLink href="/register">
+            <Button>Register Now</Button>
+          </NextChakraLink>
         </VStack>
       </ContainerInside>
     </Container>

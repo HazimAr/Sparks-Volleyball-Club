@@ -1,4 +1,4 @@
 import Hero from "./hero";
-import Register from "./register";
+import About from "./about";
 
-export { Hero, Register };
+export { Hero, About };
