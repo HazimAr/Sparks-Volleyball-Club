@@ -39,7 +39,7 @@ export default function Footer() {
           bottom={100}
           rounded="3xl"
           textAlign="center"
-          boxShadow={`0px 0px 100px ${primary}`}
+          boxShadow={`0px 0px 65px ${primary}`}
         >
           <VStack maxW="500px" px="25px" color="white">
             <Heading fontSize={{ base: "xl", sm: "3xl", lg: "4xl" }} as="h1">
