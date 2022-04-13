@@ -12,7 +12,7 @@ export default function Staff({
   return (
     <VStack>
       <Heading as="h1">Staff</Heading>
-      <SimpleGrid columns={3} gap={10}>
+      <SimpleGrid columns={{ base: 1, sm: 2, md: 3 }} gap={10}>
         {staffMembers.results.length &&
           staffMembers.results.map((member) => (
             <StaffCard
@@ -56,7 +56,6 @@ function StaffCard({ name, title, img }) {
         w="200px"
         transition="all ease .2s"
         _hover={{ transform: "scale(1.05)" }}
-        
       >
         <Image
           src={img ?? "/default.png"}

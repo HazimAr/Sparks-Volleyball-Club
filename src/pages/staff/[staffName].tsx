@@ -15,6 +15,7 @@ export default function StaffMember({ staffMember }) {
             }
             alt={`${staffMember.properties.Name.title[0]?.plain_text}'s face`}
             h="300px"
+            borderRadius="3xl"
           />
           <Heading as="h1" textAlign="center">
             {staffMember.properties.Name.title[0]?.plain_text}
