@@ -18,7 +18,7 @@ export default function Register({ forms }: { forms: QueryDatabaseResponse }) {
       <ContainerInside>
         <VStack>
           <Heading as="h1">Register</Heading>
-          <SimpleGrid columns={3} gap={10}>
+          <SimpleGrid columns={{ base: 1, sm: 2, md: 3 }} gap={10}>
             {forms.results.length &&
               forms.results.map(
                 (form) =>

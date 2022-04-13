@@ -16,7 +16,7 @@ export default function ({ questions }: { questions: QueryDatabaseResponse }) {
     <Container>
       <ContainerInside>
         <VStack>
-          <Heading as="h1" fontSize="7xl">
+          <Heading as="h1" fontSize="7xl" textAlign="center">
             FAQ
           </Heading>
           <Accordion allowToggle id="faq" w="100%">
