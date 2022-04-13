@@ -32,5 +32,6 @@ export async function getStaticProps() {
 
   return {
     props: { questions },
+    revalidate: 60,
   };
 }
