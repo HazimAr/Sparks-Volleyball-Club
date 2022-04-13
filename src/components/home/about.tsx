@@ -1,17 +1,10 @@
-import {
-  Heading,
-  HStack,
-  VStack,
-  Text,
-  Image,
-  Center,
-} from "@chakra-ui/react";
+import { Heading, HStack, VStack, Text, Image, Center } from "@chakra-ui/react";
 import Container from "@components/container";
 import ContainerInside from "@components/containerInside";
 
 export default function () {
   return (
-    <Container>
+    <Container background="primary" color="white">
       <ContainerInside>
         <VStack>
           <Heading as="h1" fontSize="7xl">

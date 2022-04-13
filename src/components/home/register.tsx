@@ -12,13 +12,13 @@ import NextChakraLink from "@components/nextChakraLink";
 
 export default function () {
   return (
-    <Container>
+    <Container py={20}>
       <ContainerInside>
-        <VStack>
+        <VStack spacing={10}>
           <Heading as="h1" fontSize="7xl">
             Programs
           </Heading>
-          <SimpleGrid columns={2} gap="50px" color="white" pt={10}>
+          <SimpleGrid columns={{ base: 1, md: 2 }} gap="50px" color="white">
             <Card
               title="Boys Club"
               description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dicta ullam illo eaque, magnam porro veniam voluptatum et tempora nostrum hic beatae modi. Atque, sequi quaerat suscipit sit corrupti saepe."
@@ -62,7 +62,12 @@ function Card({ title, description, image }) {
           transform: "scale(1.05)",
         }}
       >
-        <VStack rounded="3xl" background="rgba(0,0,0,0.5)" py={20} px={10}>
+        <VStack
+          rounded="3xl"
+          background="rgba(0,0,0,0.5)"
+          py={{ base: 10, md: 20 }}
+          px={10}
+        >
           <Heading>{title}</Heading>
           <Text>{description}</Text>
           <Button>Register</Button>
