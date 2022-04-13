@@ -31,7 +31,12 @@ export default function Contact({
           <Heading as="h1" textAlign="center">
             Contact Us
           </Heading>
-          <Flex gap={10} justify="center" align="center">
+          <Flex
+            gap={10}
+            justify="center"
+            align="center"
+            flexDir={{ base: "column", lg: "row" }}
+          >
             <ContactInfo
               icon={<FaPhoneAlt />}
               href="tel:702-502-9462"
