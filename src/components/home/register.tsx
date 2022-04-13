@@ -5,10 +5,28 @@ import {
   SimpleGrid,
   Text,
   VStack,
+  chakra,
 } from "@chakra-ui/react";
 import Container from "@components/container";
 import ContainerInside from "@components/containerInside";
 import NextChakraLink from "@components/nextChakraLink";
+import { motion } from "framer-motion";
+
+const ChakraFramer = chakra(motion.div);
+
+const cardVariants = (index: number) => ({
+  offscreen: {
+    opacity: 0,
+    x: index % 2 === 0 ? -50 : 50,
+  },
+  onscreen: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 1,
+    },
+  },
+});
 
 export default function () {
   return (
@@ -19,26 +37,54 @@ export default function () {
             Programs
           </Heading>
           <SimpleGrid columns={{ base: 1, md: 2 }} gap="50px" color="white">
-            <Card
-              title="Boys Club"
-              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dicta ullam illo eaque, magnam porro veniam voluptatum et tempora nostrum hic beatae modi. Atque, sequi quaerat suscipit sit corrupti saepe."
-              image="/hero.png"
-            />
-            <Card
-              title="Girls Club"
-              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dicta ullam illo eaque, magnam porro veniam voluptatum et tempora nostrum hic beatae modi. Atque, sequi quaerat suscipit sit corrupti saepe."
-              image="/hero.png"
-            />
-            <Card
-              title="Recreational"
-              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dicta ullam illo eaque, magnam porro veniam voluptatum et tempora nostrum hic beatae modi. Atque, sequi quaerat suscipit sit corrupti saepe."
-              image="/hero.png"
-            />
-            <Card
-              title="Camps / Clinics"
-              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dicta ullam illo eaque, magnam porro veniam voluptatum et tempora nostrum hic beatae modi. Atque, sequi quaerat suscipit sit corrupti saepe."
-              image="/hero.png"
-            />
+            <ChakraFramer
+              variants={cardVariants(0)}
+              initial="offscreen"
+              whileInView="onscreen"
+              viewport={{ amount: 0.5 }}
+            >
+              <Card
+                title="Boys Club"
+                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dicta ullam illo eaque, magnam porro veniam voluptatum et tempora nostrum hic beatae modi. Atque, sequi quaerat suscipit sit corrupti saepe."
+                image="/hero.png"
+              />
+            </ChakraFramer>
+            <ChakraFramer
+              variants={cardVariants(1)}
+              initial="offscreen"
+              whileInView="onscreen"
+              viewport={{ amount: 0.5 }}
+            >
+              <Card
+                title="Girls Club"
+                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dicta ullam illo eaque, magnam porro veniam voluptatum et tempora nostrum hic beatae modi. Atque, sequi quaerat suscipit sit corrupti saepe."
+                image="/hero.png"
+              />
+            </ChakraFramer>
+            <ChakraFramer
+              variants={cardVariants(2)}
+              initial="offscreen"
+              whileInView="onscreen"
+              viewport={{ amount: 0.5 }}
+            >
+              <Card
+                title="Recreational"
+                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dicta ullam illo eaque, magnam porro veniam voluptatum et tempora nostrum hic beatae modi. Atque, sequi quaerat suscipit sit corrupti saepe."
+                image="/hero.png"
+              />
+            </ChakraFramer>
+            <ChakraFramer
+              variants={cardVariants(3)}
+              initial="offscreen"
+              whileInView="onscreen"
+              viewport={{ amount: 0.5 }}
+            >
+              <Card
+                title="Camps / Clinics"
+                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dicta ullam illo eaque, magnam porro veniam voluptatum et tempora nostrum hic beatae modi. Atque, sequi quaerat suscipit sit corrupti saepe."
+                image="/hero.png"
+              />
+            </ChakraFramer>
           </SimpleGrid>
         </VStack>
       </ContainerInside>
