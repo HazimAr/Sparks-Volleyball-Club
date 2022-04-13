@@ -31,6 +31,7 @@ export default function Header() {
       zIndex={100}
       // color={background ? "black" :  "white"}
       fontSize={22}
+      as="header"
     >
       <ContainerInside py={2}>
         <Flex align="center" justify="space-between">

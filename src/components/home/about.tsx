@@ -2,14 +2,12 @@ import {
   Heading,
   HStack,
   VStack,
-  Button,
   Text,
   Image,
   Center,
 } from "@chakra-ui/react";
 import Container from "@components/container";
 import ContainerInside from "@components/containerInside";
-import NextChakraLink from "@components/nextChakraLink";
 
 export default function () {
   return (
@@ -61,9 +59,6 @@ export default function () {
               <Image src="/cutouts/4.png" h="300px" />
             </Center>
           </HStack>
-          <NextChakraLink href="/register">
-            <Button>Register Now</Button>
-          </NextChakraLink>
         </VStack>
       </ContainerInside>
     </Container>
