@@ -46,7 +46,7 @@ export default function Header() {
               <Heading size="md">Sparks Volleyball Club</Heading>
             </Flex>
           </NextChakraLink>
-          <Flex gap={10}>
+          <Flex gap={10} display={{ base: "none", md: "flex" }}>
             <HeaderLink href="/">Home</HeaderLink>
             <HeaderLink href="/register">Register</HeaderLink>
             <HeaderLink href="/staff">Staff</HeaderLink>

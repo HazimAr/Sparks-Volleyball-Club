@@ -93,7 +93,7 @@ function ContactInfo({ icon, title, info, href }) {
   );
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const notion = new Client({
     auth: process.env.NOTION,
   });
