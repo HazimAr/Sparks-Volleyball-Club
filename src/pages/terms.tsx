@@ -27,19 +27,8 @@ export default function Terms() {
           that oversee your use of the Site. BY LOGGING INTO THE SITE, YOU ARE
           BEING COMPLIANT THAT THESE TERMS and you represent that you have the
           authority and capacity to enter into these Terms. YOU SHOULD BE AT
-          LEAST 18 YEARS OF AGE TO ACCESS THE SITE. IF YOU DISAGREE WITH ALL OF
+          LEAST 13 YEARS OF AGE TO ACCESS THE SITE. IF YOU DISAGREE WITH ALL OF
           THE PROVISION OF THESE TERMS, DO NOT LOG INTO AND/OR USE THE SITE.
-        </p>
-
-        <p>
-          These terms require the use of arbitration Section 10.2 on an
-          individual basis to resolve disputes and also limit the remedies
-          available to you in the event of a dispute. These Terms of Use were
-          created with the help of the{" "}
-          <a href="https://www.termsofusegenerator.net">
-            Terms Of Use Generator
-          </a>
-          .
         </p>
 
         <h2>Access to the Site</h2>
