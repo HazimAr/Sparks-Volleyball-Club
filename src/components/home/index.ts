@@ -1,6 +1,6 @@
 import Hero from "./hero";
 import About from "./about";
-import Register from "./register";
+import Programs from "./programs";
 import FAQ from "./faq";
 
-export { Hero, About, Register, FAQ };
+export { Hero, About, Programs, FAQ };

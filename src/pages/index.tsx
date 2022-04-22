@@ -1,4 +1,4 @@
-import { Hero, About, Register, FAQ } from "@components/home";
+import { Hero, About, Programs, FAQ } from "@components/home";
 import { Client } from "@notionhq/client";
 import { QueryDatabaseResponse } from "@notionhq/client/build/src/api-endpoints";
 
@@ -10,7 +10,7 @@ export default function Index({
   return (
     <>
       <Hero />
-      <Register />
+      <Programs />
       <About />
       <FAQ questions={questions} />
     </>

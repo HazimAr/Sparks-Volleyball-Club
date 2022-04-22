@@ -49,7 +49,7 @@ export default function () {
               <Card
                 title="Boys Club"
                 description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dicta ullam illo eaque, magnam porro veniam voluptatum et tempora nostrum hic beatae modi. Atque, sequi quaerat suscipit sit corrupti saepe."
-                image="/hero.png"
+                image="/programs/boys.png"
               />
             </ChakraFramer>
             <ChakraFramer
@@ -61,7 +61,7 @@ export default function () {
               <Card
                 title="Girls Club"
                 description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dicta ullam illo eaque, magnam porro veniam voluptatum et tempora nostrum hic beatae modi. Atque, sequi quaerat suscipit sit corrupti saepe."
-                image="/hero.png"
+                image="/programs/girls.png"
               />
             </ChakraFramer>
             <ChakraFramer
@@ -73,7 +73,7 @@ export default function () {
               <Card
                 title="Recreational"
                 description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dicta ullam illo eaque, magnam porro veniam voluptatum et tempora nostrum hic beatae modi. Atque, sequi quaerat suscipit sit corrupti saepe."
-                image="/hero.png"
+                image="/programs/recreational.png"
               />
             </ChakraFramer>
             <ChakraFramer
@@ -85,7 +85,7 @@ export default function () {
               <Card
                 title="Camps / Clinics"
                 description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dicta ullam illo eaque, magnam porro veniam voluptatum et tempora nostrum hic beatae modi. Atque, sequi quaerat suscipit sit corrupti saepe."
-                image="/hero.png"
+                image="/programs/camps_clinics.png"
               />
             </ChakraFramer>
           </SimpleGrid>
