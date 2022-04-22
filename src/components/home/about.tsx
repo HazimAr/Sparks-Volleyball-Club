@@ -77,7 +77,7 @@ export default function () {
               w="100%"
             >
               <Center>
-                <Image src="/cutouts/3.png" h="300px" />
+                <Image src="/cutouts/5.png" h="300px" />
               </Center>
             </ChakraFramer>
             <ChakraFramer

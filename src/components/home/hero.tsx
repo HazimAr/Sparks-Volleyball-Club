@@ -6,7 +6,7 @@ export default function () {
   return (
     <Container
       h="100vh"
-      backgroundImage="hero.png"
+      backgroundImage="/hero4.png"
       backgroundRepeat="no-repeat"
       backgroundSize="cover"
       backgroundPosition="center"
@@ -15,7 +15,7 @@ export default function () {
         w="100%"
         h="100%"
         fontSize="10vw"
-        background="rgba(255,255,255,0.9)"
+        background="rgba(255,255,255,0.8)"
         color="black"
         mixBlendMode="screen"
         textTransform="uppercase"
