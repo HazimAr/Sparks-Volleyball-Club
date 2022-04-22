@@ -64,7 +64,7 @@ export default function Footer() {
           <VStack>
             <NextChakraLink href="/">
               <Image
-                src="/logo.png"
+                src="/logos/transparent_white.png"
                 alt="sparks volleyball club's logo"
                 w="200px"
                 mb={10}

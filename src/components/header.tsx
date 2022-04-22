@@ -1,4 +1,4 @@
-import { Flex, Heading } from "@chakra-ui/react";
+import { Button, Flex, Heading } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import Container from "./container";
 import ContainerInside from "./containerInside";
@@ -38,7 +38,7 @@ export default function Header() {
           <NextChakraLink href="/">
             <Flex gap={5} align="center" justify="center">
               <Image
-                src="/logos/transparent.png"
+                src="/logos/transparent_black.png"
                 alt="sparks volleyball club's logo"
                 width="75px"
                 height="75px"
@@ -48,11 +48,13 @@ export default function Header() {
           </NextChakraLink>
           <Flex gap={10} display={{ base: "none", md: "flex" }}>
             <HeaderLink href="/">Home</HeaderLink>
-            <HeaderLink href="/register">Register</HeaderLink>
             <HeaderLink href="/staff">Staff</HeaderLink>
             {/* <HeaderLink href="/story">Our Story</HeaderLink> */}
             {/* <HeaderLink href="/sponsors">Sponsors</HeaderLink> */}
             <HeaderLink href="/contact">Contact</HeaderLink>
+            <HeaderLink href="/register">
+              <Button>Register</Button>
+            </HeaderLink>
           </Flex>
         </Flex>
       </ContainerInside>

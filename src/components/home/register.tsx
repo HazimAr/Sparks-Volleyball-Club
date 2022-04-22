@@ -18,6 +18,9 @@ const cardVariants = (index: number) => ({
   offscreen: {
     opacity: 0,
     x: index % 2 === 0 ? -50 : 50,
+    transition: {
+      duration: 1,
+    },
   },
   onscreen: {
     opacity: 1,
