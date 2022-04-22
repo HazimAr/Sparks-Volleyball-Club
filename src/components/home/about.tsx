@@ -17,10 +17,7 @@ const ChakraFramer = chakra(motion.div);
 const cardVariants = (index: number) => ({
   offscreen: {
     opacity: 0,
-    y: -50,
-    transition: {
-      duration: 1,
-    },
+    y: index % 2 === 0 ? -50 : 50,
   },
   onscreen: {
     opacity: 1,
