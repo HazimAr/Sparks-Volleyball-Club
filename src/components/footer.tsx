@@ -168,8 +168,8 @@ export default function Footer() {
 
 function FooterIcon({ icon, href }) {
   return (
-    <Link href={href} isExternal>
-      <Text display="none">{href.split("/")[1]}</Text>
+    <Link fontSize={0} href={href} isExternal>
+      {href.split("/")[1]}
       <Circle
         transition="all ease .3s"
         _hover={{ background: "white", color: "primary" }}
