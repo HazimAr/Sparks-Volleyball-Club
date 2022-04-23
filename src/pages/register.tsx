@@ -37,8 +37,6 @@ export default function Register({ forms }: { forms: QueryDatabaseResponse }) {
                     // @ts-ignore
                     form.properties.Form?.url &&
                     // @ts-ignore
-                    form.properties.Description?.rich_text[0]?.plain_text &&
-                    // @ts-ignore
                     form.properties.Image.files[0]?.file?.url && (
                       <Form
                         key={form.id}
