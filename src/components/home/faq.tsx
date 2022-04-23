@@ -6,6 +6,7 @@ import {
   AccordionPanel,
   Heading,
   VStack,
+  Text,
 } from "@chakra-ui/react";
 import Container from "@components/container";
 import ContainerInside from "@components/containerInside";
@@ -23,10 +24,15 @@ export default function ({ questions }: { questions: QueryDatabaseResponse }) {
             {questions.results.map((question) => (
               <AccordionItem key={question.id}>
                 <AccordionButton>
-                  <Heading size="md" flex="1" textAlign="left">
+                  <Text
+                    fontSize="md"
+                    flex="1"
+                    textAlign="left"
+                    fontWeight="bold"
+                  >
                     {/* @ts-ignore */}
                     {question.properties.Name.title[0]?.plain_text}
-                  </Heading>
+                  </Text>
                   <AccordionIcon />
                 </AccordionButton>
                 <AccordionPanel pb={4}>

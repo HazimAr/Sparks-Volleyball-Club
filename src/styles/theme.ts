@@ -13,11 +13,13 @@ const theme = extendTheme({
     Button,
     Link,
   },
+  fonts: {
+    heading: "Caveat Brush, Open Sans, sans-serif",
+    body: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif",
+  },
   styles: {
     global: () => ({
       "html, body": {
-        fontFamily:
-          "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif",
         color: "black",
         scrollBehavior: "smooth",
         overflowX: "hidden",
