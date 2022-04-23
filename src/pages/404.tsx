@@ -12,7 +12,7 @@ import Container from "@components/container";
 import ContainerInside from "@components/containerInside";
 import NextChakraLink from "@components/nextChakraLink";
 
-export default function NotFound() {
+export default function () {
   return (
     <Container>
       <ContainerInside>

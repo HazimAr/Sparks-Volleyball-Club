@@ -9,7 +9,7 @@ import { useEffect } from "react";
 import Footer from "@components/footer";
 import Header from "@components/header";
 
-export default function MyApp({ Component, pageProps }: AppProps) {
+export default function ({ Component, pageProps }: AppProps) {
   const router = useRouter();
   useEffect(() => {
     const handleRouteChange = (url: unknown) => {
