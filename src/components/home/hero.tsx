@@ -6,7 +6,7 @@ export default function () {
   return (
     <Container
       h="100vh"
-      backgroundImage="/hero.png"
+      backgroundImage="/hero/2.png"
       backgroundRepeat="no-repeat"
       backgroundSize="cover"
       backgroundPosition="center"
