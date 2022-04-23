@@ -225,7 +225,7 @@ const MobileNav = () => {
       bg={useColorModeValue("white", "gray.800")}
       p={4}
       display={{ md: "none" }}
-      w="100vw"
+      w="92vw"
     >
       {NAV_ITEMS.map((navItem) => (
         <MobileNavItem key={navItem.label} {...navItem} />
