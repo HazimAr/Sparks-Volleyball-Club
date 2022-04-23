@@ -33,7 +33,7 @@ export default function StaffMember({ staffMember }) {
   );
 }
 
-export async function getStaticProps(ctx: GetServerSidePropsContext) {
+export async function getServerSideProps(ctx: GetServerSidePropsContext) {
   const staffMember = (
     await notion.databases.query({
       database_id: "199a36871ce14867a02c7f43182b5051",
@@ -44,28 +44,25 @@ export async function getStaticProps(ctx: GetServerSidePropsContext) {
         },
       },
     })
-  ).results[0];
+  ).results[0] ?? {
+    properties: {
+      Name: {
+        title: [{ plain_text: "No Name" }],
+      },
+      Title: {
+        rich_text: [{ plain_text: "No Title" }],
+      },
+      Bio: {
+        rich_text: [{ plain_text: "No Bio" }],
+      },
+      Image: {
+        files: [{ file: { url: "/default.png" } }],
+      },
+    },
+  };
 
   return {
     props: { staffMember },
-    revalidate: 300,
-  };
-}
-
-export async function getStaticPaths() {
-  const staff = await notion.databases.query({
-    database_id: "3a400e5f2550422498cb82b3b6579641",
-  });
-  return {
-    paths: staff.results.map((staffMember) => ({
-      params: {
-        // @ts-ignore
-        staffName: staffMember.properties.Name.title[0]?.plain_text
-          .split(" ")
-          .join("_"),
-      },
-    })),
-    fallback: false, // false or 'blocking'
   };
 }
 

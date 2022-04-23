@@ -93,7 +93,6 @@ export async function getServerSideProps() {
 
   return {
     props: { forms },
-    revalidate: 300,
   };
 }
 

@@ -45,7 +45,6 @@ export async function getServerSideProps() {
 
   return {
     props: { staffMembers },
-    revalidate: 300,
   };
 }
 
