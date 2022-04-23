@@ -20,7 +20,7 @@ import { useState } from "react";
 
 export default function Register({ forms }: { forms: QueryDatabaseResponse }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const [image, setImage] = useState("");
+  const [image, setImage] = useState({ url: "/default.png", alt: "default" });
   const mobile = useBreakpointValue({ base: true, md: false });
   return (
     <>
@@ -49,8 +49,12 @@ export default function Register({ forms }: { forms: QueryDatabaseResponse }) {
                         // @ts-ignore
                         img={form.properties.Image.files[0].file.url}
                         onClick={() => {
-                          // @ts-ignore
-                          setImage(form.properties.Image.files[0].file.url);
+                          setImage({
+                            // @ts-ignore
+                            url: form.properties.Image.files[0].file.url,
+                            // @ts-ignore
+                            alt: form.properties.Name.title[0].plain_text,
+                          });
                           if (!mobile) onOpen();
                         }}
                       />
@@ -65,7 +69,7 @@ export default function Register({ forms }: { forms: QueryDatabaseResponse }) {
         <ModalContent bg="transparent">
           <ModalBody>
             <VStack>
-              <Image src={image} rounded="3xl" h="80vh" />
+              <Image src={image.url} rounded="3xl" h="80vh" alt={image.alt + " banner"} />
               <Button mr={3} onClick={onClose}>
                 Close
               </Button>

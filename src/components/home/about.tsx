@@ -64,7 +64,7 @@ export default function () {
               w="100%"
             >
               <Center>
-                <Image src="/cutouts/2.png" h="300px" />
+                <Image src="/cutouts/2.png" h="300px" alt="girl looking up about to serve volleyball"/>
               </Center>
             </ChakraFramer>
           </HStack>
@@ -77,7 +77,7 @@ export default function () {
               w="100%"
             >
               <Center>
-                <Image src="/cutouts/5.png" h="300px" />
+                <Image src="/cutouts/5.png" h="300px" alt="girl cheering after scoring a point""/>
               </Center>
             </ChakraFramer>
             <ChakraFramer
@@ -127,7 +127,7 @@ export default function () {
               w="100%"
             >
               <Center>
-                <Image src="/cutouts/4.png" h="300px" />
+                <Image src="/cutouts/4.png" h="300px" alt="girl ready to pass the ball" />
               </Center>
             </ChakraFramer>
           </HStack>
