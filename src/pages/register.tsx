@@ -10,6 +10,7 @@ import {
   SimpleGrid,
   useDisclosure,
   VStack,
+  useBreakpointValue,
 } from "@chakra-ui/react";
 import Container from "@components/container";
 import ContainerInside from "@components/containerInside";
@@ -20,6 +21,7 @@ import { useState } from "react";
 export default function Register({ forms }: { forms: QueryDatabaseResponse }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [image, setImage] = useState("");
+  const mobile = useBreakpointValue({ base: true, md: false });
   return (
     <>
       <Container>
@@ -49,7 +51,7 @@ export default function Register({ forms }: { forms: QueryDatabaseResponse }) {
                         onClick={() => {
                           // @ts-ignore
                           setImage(form.properties.Image.files[0].file.url);
-                          onOpen();
+                          if (!mobile) onOpen();
                         }}
                       />
                     )
