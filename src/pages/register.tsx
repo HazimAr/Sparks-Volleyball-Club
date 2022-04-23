@@ -77,13 +77,13 @@ export default function Register({ forms }: { forms: QueryDatabaseResponse }) {
   );
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const notion = new Client({
     auth: process.env.NOTION,
   });
 
   let forms = await notion.databases.query({
-    database_id: "309e8f22df49471ea80d8b9af61fdc75",
+    database_id: "082e5df759df4be7aa9187ff7395e0f0",
   });
 
   forms.results = forms.results.sort((a, b) =>

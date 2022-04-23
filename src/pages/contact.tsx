@@ -104,7 +104,7 @@ export async function getStaticProps() {
   });
 
   let questions = await notion.databases.query({
-    database_id: "a06ae4178b694c9997a3bab036559543",
+    database_id: "ca1735cb9077455097a2428193be0429",
   });
   questions.results = questions.results.sort((a, b) =>
     // @ts-ignore

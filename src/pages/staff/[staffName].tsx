@@ -54,7 +54,7 @@ export async function getStaticProps(ctx: GetServerSidePropsContext) {
 
 export async function getStaticPaths() {
   const staff = await notion.databases.query({
-    database_id: "199a36871ce14867a02c7f43182b5051",
+    database_id: "3a400e5f2550422498cb82b3b6579641",
   });
   return {
     paths: staff.results.map((staffMember) => ({

@@ -18,11 +18,11 @@ export default function Staff({
             <StaffCard
               key={member.id}
               // @ts-ignore
-              name={member.properties.Name.title[0]?.plain_text}
+              name={member.properties.Name?.title?.[0]?.plain_text}
               // @ts-ignore
-              title={member.properties.Title.rich_text[0]?.plain_text}
+              title={member.properties.Title?.rich_text?.[0]?.plain_text}
               // @ts-ignore
-              img={member.properties.Image.files[0]?.file?.url}
+              img={member.properties.Image?.files?.[0]?.file?.url}
             />
           ))}
       </SimpleGrid>
@@ -30,13 +30,13 @@ export default function Staff({
   );
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const notion = new Client({
     auth: process.env.NOTION,
   });
 
   let staffMembers = await notion.databases.query({
-    database_id: "199a36871ce14867a02c7f43182b5051",
+    database_id: "3a400e5f2550422498cb82b3b6579641",
   });
   staffMembers.results = staffMembers.results.sort((a, b) =>
     // @ts-ignore
