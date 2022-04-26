@@ -17,7 +17,7 @@ export default function () {
       backgroundImage={`/hero/${background}.png`}
       backgroundRepeat="no-repeat"
       backgroundSize="cover"
-      backgroundPosition="center"
+      backgroundPosition="top"
       transition="background-image 0.5s ease"
     >
       <Container
