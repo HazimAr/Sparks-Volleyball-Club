@@ -40,9 +40,9 @@ export default function Contact({
             />
             <ContactInfo
               icon={<FaEnvelope />}
-              href="mailto:sparksvolleyballclub@gmail.com?subject=Contacted From Website"
+              href="mailto:info@sparksvolleyballclub.com?subject=Contacted From Website"
               title="Send us an email"
-              info="SparksVolleyballClub@gmail.com"
+              info="info@sparksvolleyballclub.com"
             />
             <ContactInfo
               icon={<FaMapPin />}

@@ -45,7 +45,7 @@ export default function () {
             >
               <Card
                 title="Boys Club"
-                description="Our Boys Volleyball program competes at one of the highest levels. Our coaches will teach our players fundamental volleyball skills as well as essential life-lessons, values, sportsmanship, teamwork, respect, and discipline."
+                description="Our Boys Volleyball program competes at one of the highest levels. Our coaches will teach your athletes fundamental volleyball skills as well as essential life-lessons, values, sportsmanship, teamwork, respect, and discipline."
                 image="/programs/boys.png"
               />
             </ChakraFramer>
@@ -69,7 +69,7 @@ export default function () {
             >
               <Card
                 title="Recreational"
-                description="Our recreational team focuses on child development on and off the volleyball court. Our motto “Teaching young Athletes life lessons and values through the sport of volleyball” is the foundation in which this program rests on."
+                description="Our recreational team focuses on child development on and off the volleyball court. Our motto “Teaching life lessons through the sport of volleyball” is the foundation in which this program rests on."
                 image="/programs/recreational.png"
               />
             </ChakraFramer>
@@ -81,7 +81,7 @@ export default function () {
             >
               <Card
                 title="Camps / Clinics"
-                description="Camps and Clinics are perfect for anyone who is looking to just try out the sport of volleyball.  We have a variety of camps and clinics that are designed to meet the needs of the individual athlete."
+                description="Camps and Clinics are perfect for anyone who is looking to try out the sport of volleyball or improve individual skills. We have a variety of camps and clinics that are designed to meet the needs of the individual athlete."
                 image="/programs/camps_clinics.png"
               />
             </ChakraFramer>

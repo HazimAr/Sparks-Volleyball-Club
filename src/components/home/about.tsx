@@ -120,10 +120,10 @@ export default function () {
                 <Heading>Why?</Heading>
                 <Text>
                   Sparks Volley Ball Club was founded on the core belief of
-                  teaching life lessons through the sport of volleyball. We have
-                  some of the most experienced and sought-after coaches in the
-                  region. Our state of the art 17,000 square foot facility is
-                  equipped with the latest volleyball training equipment
+                  "Teaching life lessons through the sport of volleyball". We
+                  have some of the most experienced and sought-after coaches in
+                  the region. Our state of the art 17,000 square foot facility
+                  is equipped with the latest volleyball training equipment
                 </Text>
               </VStack>
             </ChakraFramer>

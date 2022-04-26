@@ -118,6 +118,7 @@ export default function Footer() {
               </Heading>
               <NextChakraLink href="/privacy">Privacy</NextChakraLink>
               <NextChakraLink href="/terms">Terms</NextChakraLink>
+              <NextChakraLink href="/policy">Policy</NextChakraLink>
             </Stack>
             <Stack>
               <Heading size="sm" color="white">
@@ -131,8 +132,8 @@ export default function Footer() {
               />
               <Contact
                 icon={<FaEnvelope />}
-                href="mailto:sparksvolleyballclub@gmail.com?subject=Contacted From Website"
-                info="SparksVolleyballClub@gmail.com"
+                href="mailto:info@sparksvolleyballclub.com?subject=Contacted From Website"
+                info="info@sparksvolleyballclub.com"
               />
               <Contact
                 icon={<FaMapPin />}
