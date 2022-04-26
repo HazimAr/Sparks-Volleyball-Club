@@ -14,22 +14,21 @@ import { motion, Variants } from "framer-motion";
 
 const ChakraFramer = chakra(motion.div);
 
-const cardVariants = (index: number): Variants => ({
+const cardVariants: Variants = {
   offscreen: {
     opacity: 0,
-    // x: index % 2 === 0 ? -50 : 50,
     scale: 0.8,
   },
   onscreen: {
     opacity: 1,
-    // x: 0,
+
     scale: 1,
 
     transition: {
       duration: 1,
     },
   },
-});
+};
 
 export default function () {
   return (
@@ -41,7 +40,7 @@ export default function () {
           </Heading>
           <HStack spacing={0} flexDir={{ base: "column", md: "row" }}>
             <ChakraFramer
-              variants={cardVariants(0)}
+              variants={cardVariants}
               initial="offscreen"
               whileInView="onscreen"
               viewport={{ amount: 0.5 }}
@@ -60,7 +59,7 @@ export default function () {
               </VStack>
             </ChakraFramer>
             <ChakraFramer
-              variants={cardVariants(1)}
+              variants={cardVariants}
               initial="offscreen"
               whileInView="onscreen"
               viewport={{ amount: 0.5 }}
@@ -77,7 +76,7 @@ export default function () {
           </HStack>
           <HStack spacing={0} flexDir={{ base: "column-reverse", md: "row" }}>
             <ChakraFramer
-              variants={cardVariants(2)}
+              variants={cardVariants}
               initial="offscreen"
               whileInView="onscreen"
               viewport={{ amount: 0.5 }}
@@ -92,7 +91,7 @@ export default function () {
               </Center>
             </ChakraFramer>
             <ChakraFramer
-              variants={cardVariants(3)}
+              variants={cardVariants}
               initial="offscreen"
               whileInView="onscreen"
               viewport={{ amount: 0.5 }}
@@ -113,7 +112,7 @@ export default function () {
           </HStack>
           <HStack spacing={0} flexDir={{ base: "column", md: "row" }}>
             <ChakraFramer
-              variants={cardVariants(4)}
+              variants={cardVariants}
               initial="offscreen"
               whileInView="onscreen"
               viewport={{ amount: 0.5 }}
@@ -131,7 +130,7 @@ export default function () {
               </VStack>
             </ChakraFramer>
             <ChakraFramer
-              variants={cardVariants(5)}
+              variants={cardVariants}
               initial="offscreen"
               whileInView="onscreen"
               viewport={{ amount: 0.5 }}
