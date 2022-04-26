@@ -1,15 +1,25 @@
 import Container from "../container";
 
 import { Heading } from "@chakra-ui/react";
+import { useState } from "react";
+import useInterval from "hooks/useInterval";
 
 export default function () {
+  const [background, setBackground] = useState(0);
+
+  useInterval(() => {
+    setBackground((background + 1) % 3);
+    console.log((background + 1) % 3);
+  }, 3000);
+
   return (
     <Container
       h="100vh"
-      backgroundImage="/hero/2.png"
+      backgroundImage={`/hero/${background}.png`}
       backgroundRepeat="no-repeat"
       backgroundSize="cover"
       backgroundPosition="center"
+      transition="background-image 0.5s ease"
     >
       <Container
         w="100%"
