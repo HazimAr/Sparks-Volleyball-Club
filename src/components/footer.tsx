@@ -47,7 +47,7 @@ export default function Footer() {
               Upgrade ☝️ your skills today!
             </Heading>
             <Text fontSize={{ base: "sm", sm: "lg" }}>
-              👉 Build up your volleyball knowledge.
+              ⚒️ Build up your volleyball knowledge.
             </Text>
             <HStack>
               <NextChakraLink href="/register">
