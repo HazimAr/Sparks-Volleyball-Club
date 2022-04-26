@@ -12,20 +12,17 @@ export default function () {
   }, 3000);
 
   return (
-    <Container
-      h="100vh"
-      background="accent"
-    >
+    <Container h="100vh" background="rgb(191.25, 191.25, 191.25)">
       <style>
         {`
           @keyframes opacity {
             0% {
               opacity: 0;
             }
-            5% {
+            16.5% {
               opacity: 1;
             }
-            95% {
+            84.5% {
               opacity: 1;
             }
             100% {
