@@ -30,7 +30,6 @@ export default function Contact({
           <Flex
             gap={10}
             justify="center"
-            align="center"
             flexDir={{ base: "column", lg: "row" }}
           >
             <ContactInfo
