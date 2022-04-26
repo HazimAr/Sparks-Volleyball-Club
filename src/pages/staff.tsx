@@ -1,4 +1,11 @@
-import { Heading, Image, SimpleGrid, Stack, Text, VStack } from "@chakra-ui/react";
+import {
+  Heading,
+  Image,
+  SimpleGrid,
+  Stack,
+  Text,
+  VStack,
+} from "@chakra-ui/react";
 import NextChakraLink from "@components/nextChakraLink";
 import { Client } from "@notionhq/client";
 import { QueryDatabaseResponse } from "@notionhq/client/build/src/api-endpoints";
