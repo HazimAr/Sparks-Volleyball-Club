@@ -1,6 +1,6 @@
 import Container from "../container";
 
-import { Heading } from "@chakra-ui/react";
+import { Heading, Image } from "@chakra-ui/react";
 import { useState } from "react";
 import useInterval from "hooks/useInterval";
 
@@ -18,8 +18,15 @@ export default function () {
       backgroundRepeat="no-repeat"
       backgroundSize="cover"
       backgroundPosition="top"
-      transition="background-image 0.5s ease"
+      transition="background-image 1s ease"
     >
+      {(() => {
+        const imgs = [];
+        for (let i = 0; i < 10; i++) {
+          imgs.push(<Image src={`/hero/${i}.png`} display="none" />);
+        }
+        return imgs;
+      })()}
       <Container
         w="100%"
         h="100%"
