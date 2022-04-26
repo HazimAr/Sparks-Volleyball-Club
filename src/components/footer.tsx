@@ -158,7 +158,7 @@ export default function Footer() {
           </Text>
 
           <Link href="https://hazim.tech" isExternal>
-            Designed & Developed with<span>❤</span>
+            Designed & Developed with<span> ❤ </span>
             by: <span style={{ fontWeight: "bold" }}>Hazim Arafa</span>
           </Link>
         </Flex>
