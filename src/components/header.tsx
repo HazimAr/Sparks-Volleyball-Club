@@ -50,7 +50,6 @@ export default function () {
       background={background ? "white" : "transparent"}
       shadow={background ? "md" : null}
       zIndex={100}
-      // color={background ? "black" :  "white"}
       fontSize={22}
       as="header"
     >
@@ -72,6 +71,7 @@ export default function () {
               }
               variant={"ghost"}
               aria-label={"Toggle Navigation"}
+              _hover={{ background: "white" }}
             />
           </Flex>
           <Flex
@@ -126,8 +126,6 @@ export default function () {
 }
 
 const DesktopNav = () => {
-  const linkColor = useColorModeValue("gray.600", "gray.200");
-  const linkHoverColor = useColorModeValue("gray.800", "white");
   const popoverContentBgColor = useColorModeValue("white", "gray.800");
 
   return (
@@ -144,16 +142,7 @@ const DesktopNav = () => {
         >
           <Popover trigger={"hover"} placement={"bottom-start"}>
             <PopoverTrigger>
-              <HeaderLink
-                p={2}
-                href={navItem.href ?? "#"}
-                fontWeight={500}
-                color={linkColor}
-                _hover={{
-                  textDecoration: "none",
-                  color: linkHoverColor,
-                }}
-              >
+              <HeaderLink p={2} href={navItem.href ?? "#"} fontWeight={500}>
                 {navItem.label}
               </HeaderLink>
             </PopoverTrigger>
@@ -220,12 +209,7 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
 
 const MobileNav = () => {
   return (
-    <Stack
-      bg={useColorModeValue("white", "gray.800")}
-      p={4}
-      display={{ md: "none" }}
-      w="92vw"
-    >
+    <Stack bg="white" p={4} display={{ md: "none" }} w="92vw">
       {NAV_ITEMS.map((navItem) => (
         <MobileNavItem key={navItem.label} {...navItem} />
       ))}

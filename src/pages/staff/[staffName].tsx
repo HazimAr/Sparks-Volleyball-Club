@@ -36,7 +36,7 @@ export default function StaffMember({ staffMember }) {
 export async function getServerSideProps(ctx: GetServerSidePropsContext) {
   const staffMember = (
     await notion.databases.query({
-      database_id: "199a36871ce14867a02c7f43182b5051",
+      database_id: "3a400e5f2550422498cb82b3b6579641",
       filter: {
         property: "Name",
         rich_text: {
