@@ -48,7 +48,7 @@ export default function () {
             >
               <Card
                 title="Boys Club"
-                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dicta ullam illo eaque, magnam porro veniam voluptatum et tempora nostrum hic beatae modi. Atque, sequi quaerat suscipit sit corrupti saepe."
+                description="Our Boys Volleyball program competes at one of the highest levels. Our coaches will teach our players fundamental volleyball skills as well as essential life-lessons, values, sportsmanship, teamwork, respect, and discipline."
                 image="/programs/boys.png"
               />
             </ChakraFramer>
@@ -60,7 +60,7 @@ export default function () {
             >
               <Card
                 title="Girls Club"
-                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dicta ullam illo eaque, magnam porro veniam voluptatum et tempora nostrum hic beatae modi. Atque, sequi quaerat suscipit sit corrupti saepe."
+                description="As a family we will excel together, suffer together, learn together, grow together, celebrate together and bear all obstacles that may come up, TOGETHER. We have a program that will match athletes together from each level, enabling us to establish a connection throughout the entire program."
                 image="/programs/girls.png"
               />
             </ChakraFramer>
@@ -72,7 +72,7 @@ export default function () {
             >
               <Card
                 title="Recreational"
-                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dicta ullam illo eaque, magnam porro veniam voluptatum et tempora nostrum hic beatae modi. Atque, sequi quaerat suscipit sit corrupti saepe."
+                description="Our recreational team focuses on child development on and off the volleyball court. Our motto “Teaching young Athletes life lessons and values through the sport of volleyball” is the foundation in which this program rests on."
                 image="/programs/recreational.png"
               />
             </ChakraFramer>
@@ -84,7 +84,7 @@ export default function () {
             >
               <Card
                 title="Camps / Clinics"
-                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dicta ullam illo eaque, magnam porro veniam voluptatum et tempora nostrum hic beatae modi. Atque, sequi quaerat suscipit sit corrupti saepe."
+                description="Camps and Clinics are perfect for anyone who is looking to just try out the sport of volleyball.  We have a variety of camps and clinics that are designed to meet the needs of the individual athlete."
                 image="/programs/camps_clinics.png"
               />
             </ChakraFramer>
@@ -110,12 +110,14 @@ function Card({ title, description, image }) {
         _hover={{
           transform: "scale(1.05)",
         }}
+        h="100%"
       >
         <VStack
           rounded="3xl"
           background="rgba(0,0,0,0.5)"
           py={{ base: 10, md: 20 }}
           px={10}
+          h="100%"
         >
           <Heading>{title}</Heading>
           <Text>{description}</Text>
