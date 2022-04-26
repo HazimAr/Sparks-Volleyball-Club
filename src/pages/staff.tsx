@@ -1,4 +1,4 @@
-import { Heading, Image, SimpleGrid, Stack, VStack } from "@chakra-ui/react";
+import { Heading, Image, SimpleGrid, Stack, Text, VStack } from "@chakra-ui/react";
 import NextChakraLink from "@components/nextChakraLink";
 import { Client } from "@notionhq/client";
 import { QueryDatabaseResponse } from "@notionhq/client/build/src/api-endpoints";
@@ -63,7 +63,7 @@ function StaffCard({ name, title, img }) {
         />
         <Stack>
           <Heading size="md">{name}</Heading>
-          <Heading size="sm">{title}</Heading>
+          <Text fontSize="sm">{title}</Text>
         </Stack>
       </Stack>
     </NextChakraLink>
