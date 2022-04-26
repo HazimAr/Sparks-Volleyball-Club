@@ -14,10 +14,10 @@ import { QueryDatabaseResponse } from "@notionhq/client/build/src/api-endpoints"
 
 export default function ({ questions }: { questions: QueryDatabaseResponse }) {
   return (
-    <Container>
+    <Container id="faq">
       <ContainerInside>
         <VStack>
-          <Heading as="h1" fontSize="7xl" textAlign="center">
+          <Heading as="h1" size="2xl" textAlign="center">
             FAQ
           </Heading>
           <Accordion allowToggle id="faq" w="100%">

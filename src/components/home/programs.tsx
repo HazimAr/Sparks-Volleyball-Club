@@ -36,7 +36,7 @@ export default function () {
     <Container py={20}>
       <ContainerInside>
         <VStack spacing={10}>
-          <Heading as="h1" fontSize="7xl" textAlign="center">
+          <Heading as="h1" size="2xl" textAlign="center">
             Programs
           </Heading>
           <SimpleGrid columns={{ base: 1, md: 2 }} gap="50px" color="white">

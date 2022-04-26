@@ -33,7 +33,7 @@ export default function () {
     <Container background="primary" color="white">
       <ContainerInside>
         <VStack>
-          <Heading as="h1" fontSize="7xl" textAlign="center">
+          <Heading as="h1" size="2xl" textAlign="center">
             About Us
           </Heading>
           <HStack spacing={0} flexDir={{ base: "column", md: "row" }}>

@@ -14,6 +14,7 @@ import {
 } from "@chakra-ui/react";
 import Container from "@components/container";
 import ContainerInside from "@components/containerInside";
+import { FAQ } from "@components/home";
 import { Client } from "@notionhq/client";
 import { QueryDatabaseResponse } from "@notionhq/client/build/src/api-endpoints";
 import { FaEnvelope, FaMapPin, FaPhoneAlt } from "react-icons/fa";
@@ -28,7 +29,7 @@ export default function Contact({
       <ContainerInside>
         <Stack spacing={10}>
           {/* <Text>Add Interactive Map Here</Text> */}
-          <Heading as="h1" textAlign="center">
+          <Heading as="h1" size="2xl" textAlign="center">
             Contact Us
           </Heading>
           <Flex
@@ -56,26 +57,7 @@ export default function Contact({
               info="3778 W. Cheyenne Ave STE 120"
             />
           </Flex>
-          <Heading as="h1" textAlign="center">
-            FAQ
-          </Heading>
-          <Accordion allowToggle id="faq">
-            {questions.results.map((question) => (
-              <AccordionItem key={question.id}>
-                <AccordionButton>
-                  <Heading size="md" flex="1" textAlign="left">
-                    {/* @ts-ignore */}
-                    {question.properties.Name.title[0]?.plain_text}
-                  </Heading>
-                  <AccordionIcon />
-                </AccordionButton>
-                <AccordionPanel pb={4}>
-                  {/* @ts-ignore */}
-                  {question.properties.Answer.rich_text[0]?.plain_text}
-                </AccordionPanel>
-              </AccordionItem>
-            ))}
-          </Accordion>
+          <FAQ questions={questions} />
         </Stack>
       </ContainerInside>
     </Container>
@@ -89,9 +71,9 @@ function ContactInfo({ icon, title, info, href }) {
         {icon}
       </Circle>
       <Stack>
-        <Text>{title}</Text>
+        <Text fontSize="md">{title}</Text>
         <Link href={href} isExternal>
-          <Heading size="sm">{info}</Heading>
+          <Text fontSize="sm">{info}</Text>
         </Link>
       </Stack>
     </HStack>
