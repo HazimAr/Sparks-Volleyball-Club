@@ -24,7 +24,7 @@ export default function () {
               We know it hurts when you <span>JUST</span> miss the line and it
               hits out. We have our IT guy{" "}
               <span>
-                <Link href="https://hazim.tech">(thats me)</Link>
+                <Link href="https://hazim.tech" isExternal>(thats me)</Link>
               </span>{" "}
               to fix this issue.
             </Text>
