@@ -8,8 +8,7 @@ export default function () {
   const [background, setBackground] = useState(0);
 
   useInterval(() => {
-    setBackground((background + 1) % 3);
-    console.log((background + 1) % 3);
+    setBackground((background + 1) % 10);
   }, 3000);
 
   return (
