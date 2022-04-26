@@ -51,7 +51,7 @@ export default function () {
       <Container
         w="100%"
         h="100%"
-        fontSize="10vw"
+        fontSize={{ base: "20vw", md: "15vw", lg: "10vw" }}
         background="rgba(255,255,255,0.8)"
         color="black"
         mixBlendMode="screen"
