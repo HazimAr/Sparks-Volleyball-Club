@@ -21,9 +21,7 @@ const cardVariants: Variants = {
   },
   onscreen: {
     opacity: 1,
-
     scale: 1,
-
     transition: {
       duration: 1,
     },
