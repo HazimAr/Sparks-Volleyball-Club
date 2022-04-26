@@ -45,7 +45,7 @@ export default function () {
             >
               <Card
                 title="Boys Club"
-                description="Our Boys Volleyball program competes at one of the highest levels. Our coaches will teach your athletes fundamental volleyball skills as well as essential life-lessons, values, sportsmanship, teamwork, respect, and discipline."
+                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti sed suscipit aliquid culpa obcaecati, vel molestiae facilis in commodi modi nihil error nisi excepturi. Consectetur voluptatibus ratione porro magnam totam."
                 image="/programs/boys.png"
               />
             </ChakraFramer>
@@ -57,7 +57,7 @@ export default function () {
             >
               <Card
                 title="Girls Club"
-                description="As a family we will excel together, suffer together, learn together, grow together, celebrate together and bear all obstacles that may come up, TOGETHER. We have a program that will match athletes together from each level, enabling us to establish a connection throughout the entire program."
+                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti sed suscipit aliquid culpa obcaecati, vel molestiae facilis in commodi modi nihil error nisi excepturi. Consectetur voluptatibus ratione porro magnam totam."
                 image="/programs/girls.png"
               />
             </ChakraFramer>
