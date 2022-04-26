@@ -9,7 +9,7 @@ export default function () {
 
   useInterval(() => {
     setBackground((background + 1) % 10);
-  }, 3000);
+  }, 5000);
 
   return (
     <Container h="100vh" background="rgb(191.25, 191.25, 191.25)">
@@ -19,10 +19,10 @@ export default function () {
             0% {
               opacity: 0;
             }
-            16.5% {
+            10% {
               opacity: 1;
             }
-            84.5% {
+            90% {
               opacity: 1;
             }
             100% {
@@ -42,7 +42,7 @@ export default function () {
               h="100vh"
               objectFit="cover"
               objectPosition="top"
-              animation={background == i && "opacity 3s ease forwards"}
+              animation={background == i && "opacity 5s ease forwards"}
             />
           );
         }
