@@ -10,18 +10,21 @@ import {
 import Container from "@components/container";
 import ContainerInside from "@components/containerInside";
 
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 
 const ChakraFramer = chakra(motion.div);
 
-const cardVariants = (index: number) => ({
+const cardVariants = (index: number): Variants => ({
   offscreen: {
     opacity: 0,
-    y: index % 2 === 0 ? -50 : 50,
+    // x: index % 2 === 0 ? -50 : 50,
+    scale: 0.8,
   },
   onscreen: {
     opacity: 1,
-    y: 0,
+    // x: 0,
+    scale: 1,
+
     transition: {
       duration: 1,
     },
@@ -74,7 +77,7 @@ export default function () {
           </HStack>
           <HStack spacing={0} flexDir={{ base: "column-reverse", md: "row" }}>
             <ChakraFramer
-              variants={cardVariants(0)}
+              variants={cardVariants(2)}
               initial="offscreen"
               whileInView="onscreen"
               viewport={{ amount: 0.5 }}
@@ -89,7 +92,7 @@ export default function () {
               </Center>
             </ChakraFramer>
             <ChakraFramer
-              variants={cardVariants(1)}
+              variants={cardVariants(3)}
               initial="offscreen"
               whileInView="onscreen"
               viewport={{ amount: 0.5 }}
@@ -110,7 +113,7 @@ export default function () {
           </HStack>
           <HStack spacing={0} flexDir={{ base: "column", md: "row" }}>
             <ChakraFramer
-              variants={cardVariants(0)}
+              variants={cardVariants(4)}
               initial="offscreen"
               whileInView="onscreen"
               viewport={{ amount: 0.5 }}
@@ -128,7 +131,7 @@ export default function () {
               </VStack>
             </ChakraFramer>
             <ChakraFramer
-              variants={cardVariants(1)}
+              variants={cardVariants(5)}
               initial="offscreen"
               whileInView="onscreen"
               viewport={{ amount: 0.5 }}
