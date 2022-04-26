@@ -12,7 +12,7 @@ module.exports = {
       },
       {
         source: "/tiktok",
-        destination: "/",
+        destination: "https://vm.tiktok.com/TTPdVFyrMA",
         permanent: true,
       },
       {
