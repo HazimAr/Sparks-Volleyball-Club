@@ -30,7 +30,7 @@ export default function Contact({
           <Flex
             gap={10}
             justify="center"
-            flexDir={{ base: "column", lg: "row" }}
+            flexDir={{ base: "column", md: "row" }}
           >
             <ContactInfo
               icon={<FaPhoneAlt />}
