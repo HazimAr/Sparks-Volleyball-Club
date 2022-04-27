@@ -7,7 +7,7 @@ export default function Terms() {
       <ContainerInside>
         <h2>Website Terms of Use</h2>
 
-        <p>Version 1.0</p>
+        <p>Last updated: March 23, 2022</p>
 
         <p>
           The Sparks Volleyball Club website located at
