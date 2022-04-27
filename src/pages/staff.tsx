@@ -67,6 +67,8 @@ function StaffCard({ name, title, img }) {
           src={img ?? "/default.png"}
           borderRadius="3xl"
           alt={`${name}'s face`}
+          objectFit="cover"
+          h="200px"
         />
         <Stack>
           <Heading size="md">{name}</Heading>
