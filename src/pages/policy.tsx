@@ -10,67 +10,52 @@ export default function () {
         </p>
         <p>Last updated: April 2, 2020</p>
         <p>
-          1. <span style={{ textDecoration: "underline" }}>Purpose: </span>
+          1. <span>Purpose: </span>
           The purpose of this policy is to establish rules and set procedures
           for the Sparks Volleyball Club&nbsp;
         </p>
         <p>
-          2. <span style={{ textDecoration: "underline" }}>General:</span> Any
-          Sparks member, who has paid registration, and/or traveling team fees,
-          may request a refund of those fees consistent with this Policy. All
-          refund requests must be in writing and submitted to the Sparks
-          Volleyball Club Director. There will be NO REFUND of any fees after
-          the first practice has been conducted, except in the case of injury or
-          other unforeseeable hardship, as discussed below. Playing time on the
-          court is not a guaranteed when playing for Sparks Volleyball Club.
-          Playing time must be earned. Lack of playing time shall not constitute
-          an unforeseeable hardship.&nbsp;
+          2. <span>General:</span> Any Sparks member, who has paid registration,
+          and/or traveling team fees, may request a refund of those fees
+          consistent with this Policy. All refund requests must be in writing
+          and submitted to the Sparks Volleyball Club Director. There will be NO
+          REFUND of any fees after the first practice has been conducted, except
+          in the case of injury or other unforeseeable hardship, as discussed
+          below. Playing time on the court is not a guaranteed when playing for
+          Sparks Volleyball Club. Playing time must be earned. Lack of playing
+          time shall not constitute an unforeseeable hardship.&nbsp;
         </p>
         <p>
-          3.{" "}
-          <span style={{ textDecoration: "underline" }}>
-            Refund of Registration Fees:
-          </span>{" "}
-          Refunds of registration fees will be subject to an administrative fee,
-          established annually by Sparks Volleyball Club. Registration fees
-          shall be refunded when such requests are made prior to the first
-          practice of the season. Refunds shall be for the full amount paid,
-          minus the administrative fee.&nbsp;
+          3. <span>Refund of Registration Fees:</span> Refunds of registration
+          fees will be subject to an administrative fee, established annually by
+          Sparks Volleyball Club. Registration fees shall be refunded when such
+          requests are made prior to the first practice of the season. Refunds
+          shall be for the full amount paid, minus the administrative fee.&nbsp;
         </p>
         <p>
-          4.{" "}
-          <span style={{ textDecoration: "underline" }}>
-            Refund Due to Injury:
-          </span>{" "}
-          Refunds due to injury prior to the first practice of the season shall
-          be for the full amount when all Sparks provided uniforms and equipment
-          have been returned to Sparks Volleyball Club. Refunds due to injury
-          after the start of the season shall be determined on an individual
-          case basis by the Sparks Volleyball Club Director and Staff.&nbsp;
+          4. <span>Refund Due to Injury:</span> Refunds due to injury prior to
+          the first practice of the season shall be for the full amount when all
+          Sparks provided uniforms and equipment have been returned to Sparks
+          Volleyball Club. Refunds due to injury after the start of the season
+          shall be determined on an individual case basis by the Sparks
+          Volleyball Club Director and Staff.&nbsp;
         </p>
         <p>
-          5.{" "}
-          <span style={{ textDecoration: "underline" }}>
-            Tryout Fees Not Refunded
-          </span>
-          : Because tryout evaluations are conducted by paid coaches, Sparks
-          Volleyball Club will not refund tryout fees.&nbsp;
+          5. <span>Tryout Fees Not Refunded</span>: Because tryout evaluations
+          are conducted by paid coaches, Sparks Volleyball Club will not refund
+          tryout fees.&nbsp;
         </p>
         <p>
-          6.{" "}
-          <span style={{ textDecoration: "underline" }}>
-            Traveling Team Fees:
-          </span>{" "}
-          Sparks Volleyball Club traveling team fees are based on additional
-          costs associated with playing in traveling tournaments, affiliated
-          league fees (including required insurance and national association
-          memberships) and additional uniform and equipment costs. Therefore,
-          refunds for traveling team fees will be permitted only in certain
-          circumstances which typically are beyond the member&rsquo;s control.
-          Requests for refunds of traveling team fees must be made in writing to
-          the Club Director for which the player is registered. The Club
-          Director and Staff will determine if a refund is warranted within the
-          following guidelines:
+          6. <span>Traveling Team Fees:</span> Sparks Volleyball Club traveling
+          team fees are based on additional costs associated with playing in
+          traveling tournaments, affiliated league fees (including required
+          insurance and national association memberships) and additional uniform
+          and equipment costs. Therefore, refunds for traveling team fees will
+          be permitted only in certain circumstances which typically are beyond
+          the member&rsquo;s control. Requests for refunds of traveling team
+          fees must be made in writing to the Club Director for which the player
+          is registered. The Club Director and Staff will determine if a refund
+          is warranted within the following guidelines:
         </p>
         <p>
           &nbsp;a) In general, because of the up-front costs involved, no
@@ -108,32 +93,26 @@ export default function () {
           refund, less any tryout fee and administrative fee will be made.&nbsp;
         </p>
         <p>
-          7.{" "}
-          <span style={{ textDecoration: "underline" }}>
-            Appeal of Refund Amount:
-          </span>{" "}
-          Sparks members may request review and revision of refund amounts.
-          Appeals must be presented in person to the Club Director prior to or
-          during the season of play for which the refund is being considered.
-          Upon consideration of such appeal, refund amounts shall be final. No
-          appeals shall be considered where the initial refund check has been
-          endorsed and deposited by the member and payment has been recorded to
-          the appropriate Sparks checking account.&nbsp;
-        </p>
-        <p>
-          8.{" "}
-          <span style={{ textDecoration: "underline" }}>
-            Acceptance of Refund:
-          </span>{" "}
-          Where initial refund checks have been endorsed and deposited by the
+          7. <span>Appeal of Refund Amount:</span> Sparks members may request
+          review and revision of refund amounts. Appeals must be presented in
+          person to the Club Director prior to or during the season of play for
+          which the refund is being considered. Upon consideration of such
+          appeal, refund amounts shall be final. No appeals shall be considered
+          where the initial refund check has been endorsed and deposited by the
           member and payment has been recorded to the appropriate Sparks
-          checking account, such refunds are considered accepted and final, and
-          may not be appealed. Where initial refund checks have been held by the
-          member beyond 60 days past their date of issue, such refunds are
-          considered accepted and final, and may not be appealed.&nbsp;
+          checking account.&nbsp;
         </p>
         <p>
-          <span style={{ textDecoration: "underline" }}>GRIEVANCE POLICY</span>
+          8. <span>Acceptance of Refund:</span> Where initial refund checks have
+          been endorsed and deposited by the member and payment has been
+          recorded to the appropriate Sparks checking account, such refunds are
+          considered accepted and final, and may not be appealed. Where initial
+          refund checks have been held by the member beyond 60 days past their
+          date of issue, such refunds are considered accepted and final, and may
+          not be appealed.&nbsp;
+        </p>
+        <p>
+          <span>GRIEVANCE POLICY</span>
         </p>
         <p>
           Sparks Volleyball Club philosophy is to &ldquo;Learn life lesson
@@ -197,14 +176,14 @@ export default function () {
         </p>
         <p>
           The recommended time for a parent and/or athlete to meet with a coach
-          is <span style={{ textDecoration: "underline" }}>24 hours</span> after
-          a tournament and is best immediately after a scheduled practice.
-          (Please schedule in advance) It is inappropriate for an athlete or a
-          parent to approach other Sparks Volleyball Club members about a
-          problem the athlete or a parent is having with a coach, about
-          objections to coaching, or administrative decisions. For the
-          psychological health of the teams and the Club as a whole, grievances
-          must be handled via the Grievance process outline above.&nbsp;
+          is <span>24 hours</span> after a tournament and is best immediately
+          after a scheduled practice. (Please schedule in advance) It is
+          inappropriate for an athlete or a parent to approach other Sparks
+          Volleyball Club members about a problem the athlete or a parent is
+          having with a coach, about objections to coaching, or administrative
+          decisions. For the psychological health of the teams and the Club as a
+          whole, grievances must be handled via the Grievance process outline
+          above.&nbsp;
         </p>
         <p>
           Sparks Volleyball Club strongly promotes fairness and believes in open
@@ -212,9 +191,7 @@ export default function () {
           the athlete's well-being in mind.
         </p>
         <p>
-          <span style={{ textDecoration: "underline" }}>
-            Sparks Volleyball Tolerance Policy
-          </span>
+          <span>Sparks Volleyball Tolerance Policy</span>
         </p>
         <p>
           We expect each athlete, coach and parent to follow the Code of Conduct
@@ -232,9 +209,7 @@ export default function () {
           refund.&nbsp;
         </p>
         <p>
-          <span style={{ textDecoration: "underline" }}>
-            Automatic Expulsion&nbsp;
-          </span>
+          <span>Automatic Expulsion&nbsp;</span>
         </p>
         <p>
           Sparks Volleyball Club may dismiss an athlete or parent, with no
@@ -271,9 +246,7 @@ export default function () {
         </p>
         <p>-Participating in illegal activities while on the club.&nbsp;</p>
         <p>
-          <span style={{ textDecoration: "underline" }}>
-            Inappropriate Behavior:
-          </span>
+          <span>Inappropriate Behavior:</span>
         </p>
         <p>
           Please report any inappropriate behavior from coaches, parents or
