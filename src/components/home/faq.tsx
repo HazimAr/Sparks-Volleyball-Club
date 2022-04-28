@@ -20,7 +20,6 @@ const cardVariants: Variants = {
   offscreen: {
     opacity: 0,
     x: -50,
-
   },
   onscreen: {
     opacity: 1,
@@ -60,9 +59,11 @@ export default function ({ questions }: { questions: QueryDatabaseResponse }) {
                     </Text>
                     <AccordionIcon />
                   </AccordionButton>
-                  <AccordionPanel pb={4}>
+                  <AccordionPanel pb={4} whiteSpace="pre-line">
                     {/* @ts-ignore */}
-                    {question.properties.Answer.rich_text[0]?.plain_text}
+                    {question.properties.Answer.rich_text.map((answer) => (
+                      <>{answer.plain_text}</>
+                    ))}
                   </AccordionPanel>
                 </AccordionItem>
               </ChakraFramer>
