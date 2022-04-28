@@ -31,18 +31,13 @@ const cardVariants = (index: number) => ({
 
 export default function () {
   return (
-    <Container py={20}>
+    <Container py={20} overflowX="hidden">
       <ContainerInside>
         <VStack spacing={10}>
           <Heading as="h1" size="2xl" textAlign="center">
             Programs
           </Heading>
-          <SimpleGrid
-            columns={{ base: 1, md: 2 }}
-            gap="50px"
-            color="white"
-            overflowX="hidden"
-          >
+          <SimpleGrid columns={{ base: 1, md: 2 }} gap="50px" color="white">
             <ChakraFramer
               variants={cardVariants(0)}
               initial="offscreen"
