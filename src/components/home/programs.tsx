@@ -14,6 +14,7 @@ import { motion } from "framer-motion";
 
 const ChakraFramer = chakra(motion.div);
 
+
 const cardVariants = (index: number) => ({
   offscreen: {
     opacity: 0,
@@ -36,7 +37,12 @@ export default function () {
           <Heading as="h1" size="2xl" textAlign="center">
             Programs
           </Heading>
-          <SimpleGrid columns={{ base: 1, md: 2 }} gap="50px" color="white">
+          <SimpleGrid
+            columns={{ base: 1, md: 2 }}
+            gap="50px"
+            color="white"
+            overflowX="hidden"
+          >
             <ChakraFramer
               variants={cardVariants(0)}
               initial="offscreen"

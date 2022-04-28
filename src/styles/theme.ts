@@ -22,7 +22,6 @@ const theme = extendTheme({
       "html, body": {
         color: "black",
         scrollBehavior: "smooth",
-        overflowX: "hidden",
       },
       a: {
         color: "inherit",
