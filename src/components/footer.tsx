@@ -6,7 +6,6 @@ import {
   Flex,
   Heading,
   HStack,
-  Image,
   Link,
   Stack,
   Text,
@@ -24,7 +23,7 @@ import {
   FaTiktok,
   FaMapPin,
 } from "react-icons/fa";
-// import NextImage from "next/image";
+import NextImage from "next/image";
 import NextChakraLink from "./nextChakraLink";
 
 export default function Footer() {
@@ -63,11 +62,11 @@ export default function Footer() {
         >
           <VStack>
             <NextChakraLink href="/">
-              <Image
+              <NextImage
                 src="/logos/transparent_white.png"
                 alt="sparks volleyball club's logo"
-                w="200px"
-                mb={10}
+                width="200px"
+                height="200px"
               />
             </NextChakraLink>
             <HStack gap={5} justify="center">

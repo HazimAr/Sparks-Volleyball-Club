@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Container from "./container";
 import ContainerInside from "./containerInside";
 import NextChakraLink from "./nextChakraLink";
-import Image from "next/image";
+import NextImage from "next/image";
 import {
   Box,
   Flex,
@@ -86,7 +86,7 @@ export default function () {
                 justify="center"
                 flexDir={{ base: "column", sm: "row" }}
               >
-                <Image
+                <NextImage
                   src="/logos/transparent_black.png"
                   alt="sparks volleyball club's logo"
                   width="75px"

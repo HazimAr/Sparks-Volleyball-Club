@@ -1,6 +1,7 @@
 import Container from "../container";
 
-import { Heading, Image } from "@chakra-ui/react";
+import { Box, Heading } from "@chakra-ui/react";
+import NextImage from "next/image";
 import { useState } from "react";
 import useInterval from "hooks/useInterval";
 
@@ -34,16 +35,20 @@ export default function () {
         const imgs = [];
         for (let i = 0; i < 10; i++) {
           imgs.push(
-            <Image
-              src={`/hero/${i}.png`}
+            <Box
               visibility={background == i ? "visible" : "hidden"}
+              width="100%"
+              height="100vh"
               position="absolute"
-              w="100vw"
-              h="100vh"
-              objectFit="cover"
-              objectPosition="top"
               animation={background == i && "opacity 5s ease forwards"}
-            />
+            >
+              <NextImage
+                src={`/hero/${i}.png`}
+                objectFit="cover"
+                objectPosition="top"
+                layout="fill"
+              />
+            </Box>
           );
         }
         return imgs;

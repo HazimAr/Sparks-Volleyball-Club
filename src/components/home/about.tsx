@@ -3,12 +3,12 @@ import {
   HStack,
   VStack,
   Text,
-  Image,
   Center,
   chakra,
 } from "@chakra-ui/react";
 import Container from "@components/container";
 import ContainerInside from "@components/containerInside";
+import NextImage from "next/image";
 
 import { motion, Variants } from "framer-motion";
 
@@ -64,9 +64,10 @@ export default function () {
               w="100%"
             >
               <Center>
-                <Image
+                <NextImage
                   src="/cutouts/2.png"
-                  h="300px"
+                  width="300px"
+                  height="300px"
                   alt="girl looking up about to serve volleyball"
                 />
               </Center>
@@ -81,9 +82,10 @@ export default function () {
               w="100%"
             >
               <Center>
-                <Image
+                <NextImage
                   src="/cutouts/5.png"
-                  h="300px"
+                  width="300px"
+                  height="300px"
                   alt="girl cheering after scoring a point"
                 />
               </Center>
@@ -135,9 +137,10 @@ export default function () {
               w="100%"
             >
               <Center>
-                <Image
+                <NextImage
                   src="/cutouts/4.png"
-                  h="300px"
+                  width="300px"
+                  height="300px"
                   alt="girl ready to pass the ball"
                 />
               </Center>
