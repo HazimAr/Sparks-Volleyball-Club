@@ -1,5 +1,4 @@
 import Container from "../container";
-
 import { Box, Heading } from "@chakra-ui/react";
 import NextImage from "next/image";
 import { useState } from "react";
@@ -44,6 +43,7 @@ export default function () {
             >
               <NextImage
                 src={`/hero/${i}.png`}
+                alt="background image"
                 objectFit="cover"
                 objectPosition="top"
                 layout="fill"
