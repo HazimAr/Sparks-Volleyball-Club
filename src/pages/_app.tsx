@@ -1,45 +1,41 @@
-import "@styles/global.css";
-import Footer from "@components/foot";
-import Header from "@components/head";
+import { ChakraProvider } from "@chakra-ui/react";
+import theme from "@styles/theme";
 import { pageview } from "@lib/gtag";
+import { META } from "config";
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
+import Footer from "@components/footer";
+import Header from "@components/header";
 
-import { COMPANY_META } from "../config";
+export default function ({ Component, pageProps }: AppProps) {
+  const router = useRouter();
+  useEffect(() => {
+    const handleRouteChange = (url: unknown) => {
+      pageview(url);
+    };
 
-// eslint-disable-next-line import/no-default-export
-export default function MyApp({ Component, pageProps }: AppProps): JSX.Element {
-	const router = useRouter();
-	useEffect(() => {
-		const handleRouteChange = (url: unknown) => {
-			pageview(url);
-		};
-		router.events.on("routeChangeComplete", handleRouteChange);
-		return () => {
-			router.events.off("routeChangeComplete", handleRouteChange);
-		};
-	}, [router.events]);
-	return (
-		<>
-			<Head>
-				<title>{COMPANY_META.title}</title>
-				<link rel="icon" href="/favicon.ico" />
-				<link rel="preconnect" href="https://fonts.gstatic.com" />
-				<link rel="preload" href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" as="style" /><link
-					href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
-					rel="stylesheet"
-				/>
-				<link rel="preload" href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" as="style" /><link
-					href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
-					rel="stylesheet"
-				/>
-			</Head>
+    router.events.on("routeChangeComplete", handleRouteChange);
 
-			<Header />
-			<Component {...pageProps} />
-			<Footer />
-		</>
-	);
+    return () => {
+      router.events.off("routeChangeComplete", handleRouteChange);
+    };
+  }, [router.events]);
+
+  if (typeof location == "undefined") return null;
+
+  return (
+    <>
+      <Head>
+        <title>{META.title}</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <ChakraProvider theme={theme}>
+        <Header />
+        <Component {...pageProps} />
+        <Footer />
+      </ChakraProvider>
+    </>
+  );
 }
