@@ -1,4 +1,4 @@
-const GA_TRACKING_ID = "G-X11P4GZF1E";
+const GA_TRACKING_ID = "G-HJ2F4WJZML";
 
 const META = {
   title: "Sparks Volleyball Club | Empowering Youth Volleyball",
