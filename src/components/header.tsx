@@ -141,6 +141,7 @@ const DesktopNav = () => {
           }
         >
           <Popover trigger={"hover"} placement={"bottom-start"}>
+            {/* @ts-ignore */}
             <PopoverTrigger>
               <HeaderLink p={2} href={navItem.href ?? "#"} fontWeight={500}>
                 {navItem.label}
