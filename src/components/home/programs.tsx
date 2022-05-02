@@ -46,7 +46,7 @@ export default function () {
             >
               <Card
                 title="Boys Club"
-                description="We are one of the few volleyball clubs in vegas that offer boys club volleyball, not only do we offer it, we encourage boys to come join us and learn at any skill level."
+                description="We are one of the few volleyball clubs in vegas that offer boys club volleyball. Not only do we offer it, but we encourage boys to join us and learn at any skill level."
                 image="/programs/boys.png"
               />
             </ChakraFramer>
@@ -58,7 +58,7 @@ export default function () {
             >
               <Card
                 title="Girls Club"
-                description="We are one of the top volleyball clubs in nevada with a tremendous amount of trophies, ranging from all ages to all skill levels. We also offer travel, local, and developmental teams to really pinpoint the best way to improve."
+                description="We are one of the top volleyball clubs in Nevada with a tremendous amount of trophies, ranging from all ages to all skill levels. We also offer travel, local, and developmental teams to pinpoint the best way to improve."
                 image="/programs/girls.png"
               />
             </ChakraFramer>
@@ -70,7 +70,7 @@ export default function () {
             >
               <Card
                 title="Recreational"
-                description="Our recreational team focuses on child development on and off the volleyball court. Our motto “Teaching life lessons through the sport of volleyball” is the foundation in which this program rests on."
+                description="Our recreational team focuses on development on and off the volleyball court. Our motto, “Teaching life lessons through the sport of volleyball” is the foundation in which this program rests on."
                 image="/programs/recreational.png"
               />
             </ChakraFramer>
@@ -82,7 +82,7 @@ export default function () {
             >
               <Card
                 title="Camps / Clinics"
-                description="Camps and Clinics are perfect for anyone who is looking to try out the sport of volleyball or improve individual skills. We have a variety of camps and clinics that are designed to meet the needs of the individual athlete."
+                description="Camps and Clinics are perfect for anyone looking to try out the sport of volleyball or improve individual skills. We have a variety of camps and clinics that are designed to meet the needs of the individual athlete."
                 image="/programs/camps_clinics.png"
               />
             </ChakraFramer>
