@@ -68,6 +68,7 @@ function StaffCard({ name, title, img }) {
           borderRadius="3xl"
           alt={`${name}'s face`}
           objectFit="cover"
+          objectPosition="top"
           h="200px"
         />
         <Stack>
