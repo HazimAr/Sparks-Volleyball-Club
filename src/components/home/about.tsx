@@ -50,8 +50,8 @@ export default function () {
                   Sparks Volleyball Club is committed to providing an excellent
                   volleyball experience that promotes hard work, great
                   attitudes, a genuine respect for the game, a “TEAM” concept at
-                  all times, and leadership development for each athlete. SVBC
-                  will provide the maximum opportunity for each athlete to train
+                  all times, and leadership development for every athlete. SVBC
+                  will provide the maximum opportunity for every athlete to train
                   and compete at their highest level.
                 </Text>
               </VStack>
@@ -101,8 +101,8 @@ export default function () {
                 <Heading>What?</Heading>
                 <Text>
                   Champion athletes aren’t just born - they’re selected,
-                  trained, molded and tested. We hone raw talent to maturity
-                  with quality coaching, primal workouts and a true love of the
+                  trained, molded, and tested. We hone raw talent to maturity
+                  with quality coaching, primal workouts, and a true love of the
                   sport. Teamwork, perseverance, sportsmanship - those are the
                   hallmarks of Sparks VBC. No more hoping for the “good coach”
                   or following coaches from club to club.
@@ -121,11 +121,11 @@ export default function () {
               <VStack>
                 <Heading>Why?</Heading>
                 <Text>
-                  Sparks Volley Ball Club was founded on the core belief of
+                  Sparks Volleyball Club was founded on the core belief of
                   "Teaching life lessons through the sport of volleyball". We
                   have some of the most experienced and sought-after coaches in
                   the region. Our state of the art 17,000 square foot facility
-                  is equipped with the latest volleyball training equipment
+                  is equipped with the latest volleyball training equipment.
                 </Text>
               </VStack>
             </ChakraFramer>
