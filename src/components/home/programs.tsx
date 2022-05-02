@@ -46,7 +46,7 @@ export default function () {
             >
               <Card
                 title="Boys Club"
-                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti sed suscipit aliquid culpa obcaecati, vel molestiae facilis in commodi modi nihil error nisi excepturi. Consectetur voluptatibus ratione porro magnam totam."
+                description="We are one of the few volleyball clubs in vegas that offer boys club volleyball, not only do we offer it, we encourage boys to come join us and learn at any skill level."
                 image="/programs/boys.png"
               />
             </ChakraFramer>
@@ -58,7 +58,7 @@ export default function () {
             >
               <Card
                 title="Girls Club"
-                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti sed suscipit aliquid culpa obcaecati, vel molestiae facilis in commodi modi nihil error nisi excepturi. Consectetur voluptatibus ratione porro magnam totam."
+                description="We are one of the top volleyball clubs in nevada with a tremendous amount of trophies, ranging from all ages to all skill levels. We also offer travel, local, and developmental teams to really pinpoint the best way to improve."
                 image="/programs/girls.png"
               />
             </ChakraFramer>
