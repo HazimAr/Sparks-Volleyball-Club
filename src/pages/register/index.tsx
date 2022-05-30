@@ -32,9 +32,9 @@ const registerData: register[] = [
 		link: "https://sparksvolleyballclub.sportngin.com/register/form/938359750",
 	},
 	{
-		img: "girls2.jpg",
+		img: "girls.jpg",
 		name: "Girls Far Data",
-		link: "/register/girls2",
+		link: "https://sparksvolleyballclub.sportngin.com/register/form/854557040",
 	},
 ];
 
