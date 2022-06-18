@@ -5,6 +5,7 @@ import { Client } from "@notionhq/client";
 import { GetServerSidePropsContext } from "next";
 
 export default function StaffMember({ staffMember }) {
+  console.log(staffMember);
   return (
     <Container>
       <ContainerInside>
@@ -23,7 +24,7 @@ export default function StaffMember({ staffMember }) {
           <Heading size="md" textAlign="center">
             {staffMember.properties.Title.rich_text[0]?.plain_text}
           </Heading>
-          <Text>
+          <Text whiteSpace="pre-wrap">
             {staffMember.properties.Bio.rich_text[0]?.plain_text ??
               "No Biography Provided"}
           </Text>
