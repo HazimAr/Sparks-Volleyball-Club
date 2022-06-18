@@ -24,7 +24,7 @@ export default function StaffMember({ staffMember }) {
           <Heading size="md" textAlign="center">
             {staffMember.properties.Title.rich_text[0]?.plain_text}
           </Heading>
-          <Text whiteSpace="pre-line">
+          <Text whiteSpace="pre-line" maxW="60ch">
             {staffMember.properties.Bio.rich_text[0]?.plain_text ??
               "No Biography Provided"}
           </Text>
