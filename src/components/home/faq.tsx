@@ -1,42 +1,76 @@
-import Image from "next/image";
+import {
+  Accordion,
+  AccordionButton,
+  AccordionIcon,
+  AccordionItem,
+  AccordionPanel,
+  Heading,
+  VStack,
+  Text,
+  chakra,
+} from "@chakra-ui/react";
+import Container from "@components/container";
+import ContainerInside from "@components/containerInside";
+import { QueryDatabaseResponse } from "@notionhq/client/build/src/api-endpoints";
+import { motion, Variants } from "framer-motion";
 
-export default function Faq() {
-	function FaqSection(props: any) {
-		return (
-			<div className="faq-section" key={props.id} id={props.id}>
-				<Image
-					width={60}
-					height={60}
-					className="faq-img"
-					alt=""
-					src={props.image}
-				/>
-				<h3 className="faq-title">{props.title}</h3>
-				<p>{props.text}</p>
-			</div>
-		);
-	}
-	return (
-		<div className="faq-div" id="faq">
-			<h2 className="section-title">Frequently Asked Questions</h2>
-			<FaqSection
-				id="faq-left"
-				image="/Images/down.svg"
-				title="What sets Sparks apart from other teams?"
-				text="Sparks Volley Ball Club was founded on the core belief of teaching life lessons through the sport of volleyball. We have some of the most experienced and sought after coaches in the region. Our state of the art 17,000 square foot facility is equipped with the latest volleyball training equipment"
-			/>
-			<FaqSection
-				id="faq-middle"
-				image="/Images/barGraph.svg"
-				title="When and Where are practices?"
-				text="We practice at the Nevada Volleyball Center - 3778 W. Cheyenne Ave #120 N. Las Vegas, NV 89032. Days and times will vary."
-			/>
-			<FaqSection
-				id="faq-right"
-				image="/Images/trendingUp.svg"
-				title="What do club fees cover?"
-				text="Club fees cover everything you will need to be successful, including but not limited to education, certifications, uniforms, practices, tournaments, specialty training, administrative costs, travel transportation, and lodging."
-			/>
-		</div>
-	);
+const ChakraFramer = chakra(motion.div);
+
+const cardVariants: Variants = {
+  offscreen: {
+    opacity: 0,
+    x: -50,
+  },
+  onscreen: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 1,
+    },
+  },
+};
+
+export default function ({ questions }: { questions: QueryDatabaseResponse }) {
+  return (
+    <Container id="faq">
+      <ContainerInside>
+        <VStack>
+          <Heading as="h1" size="2xl" textAlign="center">
+            FAQ
+          </Heading>
+          <Accordion allowToggle id="faq" w="100%">
+            {questions.results.map((question) => (
+              <ChakraFramer
+                variants={cardVariants}
+                initial="offscreen"
+                whileInView="onscreen"
+                key={question.id}
+              >
+                <AccordionItem>
+                  <AccordionButton>
+                    <Text
+                      fontSize="md"
+                      flex="1"
+                      textAlign="left"
+                      fontWeight="bold"
+                    >
+                      {/* @ts-ignore */}
+                      {question.properties.Name.title[0]?.plain_text}
+                    </Text>
+                    <AccordionIcon />
+                  </AccordionButton>
+                  <AccordionPanel pb={4} whiteSpace="pre-line">
+                    {/* @ts-ignore */}
+                    {question.properties.Answer.rich_text.map((answer) => (
+                      <>{answer.plain_text}</>
+                    ))}
+                  </AccordionPanel>
+                </AccordionItem>
+              </ChakraFramer>
+            ))}
+          </Accordion>
+        </VStack>
+      </ContainerInside>
+    </Container>
+  );
 }
