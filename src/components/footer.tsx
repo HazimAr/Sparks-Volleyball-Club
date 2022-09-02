@@ -77,10 +77,10 @@ export default function Footer() {
             </HStack>
           </VStack>
           <Flex
-            justify={{ base: "flex-start", md: "space-between" }}
             w="100%"
             pt={{ base: 20, lg: 0 }}
             flexDir={{ base: "column", md: "row" }}
+            justify={{ base: "flex-start", md: "space-between" }}
             gap={10}
           >
             <Stack>
