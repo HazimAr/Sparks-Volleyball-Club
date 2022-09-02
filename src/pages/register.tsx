@@ -66,10 +66,15 @@ export default function Register({ forms }: { forms: QueryDatabaseResponse }) {
       </Container>
       <Modal isOpen={isOpen} onClose={onClose} size="2xl">
         <ModalOverlay />
-        <ModalContent bg="transparent">
+        <ModalContent bg="transparent" shadow="none">
           <ModalBody>
             <VStack>
-              <Image src={image.url} rounded="3xl" h="80vh" alt={image.alt + " banner"} />
+              <Image
+                src={image.url}
+                rounded="3xl"
+                h="80vh"
+                alt={image.alt + " banner"}
+              />
               <Button mr={3} onClick={onClose}>
                 Close
               </Button>
