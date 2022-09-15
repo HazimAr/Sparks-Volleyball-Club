@@ -23,7 +23,7 @@ export default function ({ Component, pageProps }: AppProps) {
     };
   }, [router.events]);
 
-  if (typeof location == "undefined") return null;
+  // if (typeof location == "undefined") return null;
 
   return (
     <>

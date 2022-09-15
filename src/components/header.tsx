@@ -29,8 +29,10 @@ import {
 export default function () {
   const [background, setBackground] = useState(false);
   const { isOpen, onToggle } = useDisclosure();
+  const [locationState, setLocationState] = useState(null);
 
   useEffect(() => {
+    setLocationState(location);
     onscroll = () => {
       if (window.scrollY > 30) {
         setBackground(true);
@@ -43,9 +45,9 @@ export default function () {
 
   return (
     <Container
-      position={location.pathname == "/" ? "fixed" : "sticky"}
+      position={locationState?.pathname == "/" ? "fixed" : "sticky"}
       top={0}
-      w={location.pathname == "/" ? "100vw" : "auto"}
+      w={locationState?.pathname == "/" ? "100vw" : "auto"}
       transition="all 0.3s ease"
       background={background ? "white" : "transparent"}
       shadow={background ? "md" : null}

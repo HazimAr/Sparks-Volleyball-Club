@@ -44,8 +44,10 @@ export default function Register({ forms }: { forms: QueryDatabaseResponse }) {
                         key={form.id}
                         // @ts-ignore
                         name={form.properties.Name.title[0].plain_text}
-                        // @ts-ignore
-                        buttonText={form.properties.ButtonText.title[0].plain_text}
+                        buttonText={
+                          // @ts-ignore
+                          form.properties.ButtonText?.rich_text?.[0]?.plain_text
+                        }
                         // @ts-ignore
                         form={form.properties.Form.url}
                         // @ts-ignore
