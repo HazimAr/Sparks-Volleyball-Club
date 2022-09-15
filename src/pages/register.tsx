@@ -45,6 +45,8 @@ export default function Register({ forms }: { forms: QueryDatabaseResponse }) {
                         // @ts-ignore
                         name={form.properties.Name.title[0].plain_text}
                         // @ts-ignore
+                        buttonText={form.properties.ButtonText.title[0].plain_text}
+                        // @ts-ignore
                         form={form.properties.Form.url}
                         // @ts-ignore
                         img={form.properties.Image.files[0].file.url}
@@ -105,7 +107,7 @@ export async function getServerSideProps() {
   };
 }
 
-function Form({ name, form, img, ...props }) {
+function Form({ name, form, img, buttonText = "Register", ...props }) {
   return (
     <VStack
       maxW="350px"
@@ -119,7 +121,7 @@ function Form({ name, form, img, ...props }) {
       <Image src={img} borderRadius="3xl" alt={`${name} banner`} />
       <VStack textAlign="center">
         <Link href={form} isExternal>
-          <Button>Register</Button>
+          <Button>{buttonText}</Button>
         </Link>
       </VStack>
     </VStack>
