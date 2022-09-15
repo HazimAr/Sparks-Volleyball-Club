@@ -37,8 +37,6 @@ export default function Register({ forms }: { forms: QueryDatabaseResponse }) {
                     // @ts-ignore
                     form.properties.Name?.title?.[0]?.plain_text &&
                     // @ts-ignore
-                    form.properties.Form?.url &&
-                    // @ts-ignore
                     form.properties.Image.files[0]?.file?.url && (
                       <Form
                         key={form.id}
@@ -123,7 +121,9 @@ function Form({ name, form, img, buttonText = "Register", ...props }) {
       <Image src={img} borderRadius="3xl" alt={`${name} banner`} />
       <VStack textAlign="center">
         <Link href={form} isExternal>
-          <Button>{buttonText}</Button>
+          <Button as={form ? Link : Button} isExternal={form ? true : undefined}>
+            {buttonText}
+          </Button>
         </Link>
       </VStack>
     </VStack>
