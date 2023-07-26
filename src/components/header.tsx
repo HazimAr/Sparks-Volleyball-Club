@@ -293,10 +293,10 @@ const NAV_ITEMS: Array<NavItem> = [
     label: "Home",
     href: "/",
   },
-  {
-    label: "Staff",
-    href: "/staff",
-  },
+  // {
+  //   label: "Staff",
+  //   href: "/staff",
+  // },
   {
     label: "Contact",
     href: "/contact",
